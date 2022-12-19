@@ -157,26 +157,64 @@ https://flickity.metafizzy.co
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    object-fit: cover;
+    background-size: auto;
 }
 
+
+    .slider {
+        /* color: white; */
+        text-align: center;
+        height: 520px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        object-fit: cover;
+        background-size: 1271px 631px;
+        
+    }
+
 .sl-chars {
+    color: white;
     text-align: center;
     display: flex;
-    font-size: 30px;
+    font-size: 100px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
     letter-spacing: 1px;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
     justify-content: center;
 
+
 }
-.sl-chars_margin{
- margin-right: 10px;
+
+.sl-chars_margin {
+    margin-right: 10px;
 }
+
+.layer {
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 17px;
+    font-family: 'Open Sans';
+}
+
 .btn {
+    color: #ffffff;
+    margin-top: 50px;
+    margin: 30px auto;
     font-size: 15px;
     text-align: center;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 2px;
+    padding: 10px 20px;
+    width: 10%;
+    font-family: "Quicksand";
 
-    
-  
 }
