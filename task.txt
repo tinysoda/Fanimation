@@ -1,0 +1,23 @@
+xây dựng trang quản lý (admin)
+	quản lý thành viên
+	quản lý danh mục sản phẩm, sản phẩm
+	...
+
+trang hiển thị
+	Login page
+	Master page
+	Trang quản trị
+		quản lý thành viên
+		quản lý danh mục
+		quản lý sản phẩm (thêm/sửa/xóa)
+		quản lý feedback 
+	Trang duyệt sản phảm
+		danh mục sản phẩm
+	Trang checkout
+		
+Chức năng
+	featured products
+	best sellers
+
+DATABASE
+
