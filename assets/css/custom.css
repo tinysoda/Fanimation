@@ -43,6 +43,7 @@ padding-top: 15px;
 line-height: 40px;
 padding-left: 20px;
 display: none;
+z-index: 2;
 }
 
 
@@ -99,10 +100,11 @@ display: none;
 .tren{
 	background-color: #53284f;
 	width: 100%;
-	height: 85px;
+	height: 110px;
 	display: flex;
 	position: relative;
-		color: white;
+	color: white;
+	z-index: 22222222222222;
 }
 .trai h2{
  font-size: 25px;
