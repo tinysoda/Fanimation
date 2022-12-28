@@ -67,9 +67,84 @@
 						<li><a href="">Download Product Catalog</a></li>
 					</ul>
 				</li>
+				<li><a onclick="document.getElementById('id01').style.display = 'block'"><strong>Login</strong></a></li>
+                <li><a onclick="document.getElementById('id02').style.display = 'block'"><strong>Register</strong></a></li>
 			</ul>
 		</div>
 	</div>
+	<div id="id01" class="modal container">
+		<form class="modal-content animate" method="post">
+			<div class="">
+				<span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="close"> &times; </span>
+			</div>
+			<div class="container">
+				<br><br>
+				<h3><strong>Login<strong></h3>
+							<br>
+							<label>Username: </label>
+							<br>
+							<input type="text" name="username" required>
+							<br>
+							<label>Password:  </label>
+							<br>
+							<input type="password" name="password" required>
+							<br><br>
+							<label>
+								<input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu
+							</label>
+							<br>
+							<span class="psw">Forgot <a href="#"> password?</a></span>
+							<br>
+							<span>Need an account ?<a onclick="document.getElementById('id02').style.display = 'block'"> Register</a> now.<span>
+							<br><br>
+							<button type="submit" name="login" style="width: auto;" class="btn btn-success">Login</button>
+							<br><br>
+			</div>
+			<br><br>                            
+		</form>
+		<br><br>
+	</div>
+	<div id="id02" class="modal container">
+		<form class="modal-content animate">
+			<div class="">
+				<span onclick="document.getElementById('id02').style.display = 'none'" class="close" title="Đóng">&times;</span>
+			</div>
+			<div class="container">
+				<br><br>
+				<h3><strong>Register<strong></h3>
+							<br>
+							<label>Username: </label>
+							<br>
+							<input type="text" name="username" required>
+							<br>
+							<label>Email: </label>
+							<br>
+							<input type="email" name="email" required>
+							<br>
+							<label>Tel number: </label>
+							<br>
+							<input type="tel" name="phone" required>
+							<br>
+							<label>Address: </label>
+							<br>
+							<input type="text" name="address" required>
+							<br>
+							<label>Password:  </label>
+							<br>
+							<input type="password" name="pass" required>
+							<br>
+							<label>Re-enter password: </label>
+							<br>
+							<input type="password" name="repass" required>
+							<br><br>
+							<button type="submit" style="width: auto;" class="btn btn-success">Register</button>
+							<br><br>
+							</div>
+							<br><br>
+							</form>
+							<br><br>
+							</div>
+
 	<section class="slider-homepage" data-flickity='{
 	"cellAlign" : "left",
 	"contain" : true,
@@ -543,9 +618,9 @@
 					using the latest technology for energy efficiency and seamless control.</h2>
 			</div>
 			<div class="icon">
-				<a href=""><i class="fa-brands fa-twitter"></i></a>
-					<a href=""><i class="fa-brands fa-facebook"></i> </a>
-						<a href=""><i class="fa-brands fa-youtube"></i> </a>
+				<a href=""><i class="fa-brands fa-twitter"></i>
+					<a href=""><i class="fa-brands fa-facebook"></i>
+						<a href=""><i class="fa-brands fa-youtube"></i>
 			</div>
 			<div class="phai">
 				<h2>DOWNLOAD</h2>
@@ -560,23 +635,23 @@
 				Fax: 866.482.5215
 			</div>
 			<div class="giuatotrai">
-				<a href="">Home </a> <br>
-					<a href="">Blog</a><br>
-						<a href="">Antique Fan Museum</a><br>
+				<a href="">Home <br>
+					<a href="">Blog<br>
+						<a href="">Antique Fan Museum<br>
 							<a href="">Contact
 			</div>
 			<div class="giuatotrai">
-				<a href="">Products</a> <br>
-					<a href="">Product Catalog</a><br>
-						<a href="">Choosing a Fan</a><br>
-							<a href="">Smart Controls</a>
+				<a href="">Products <br>
+					<a href="">Product Catalog<br>
+						<a href="">Choosing a Fan<br>
+							<a href="">Smart Controls
 			</div>
 			<div class="giuatotrai">
-				<a href="">Product Support</a> <br>
-					<a href="">Product Registration</a><br>
-						<a href="">Find an Authorized Dealer</a><br>
-							<a href="">Sales Agent Locator </a><br>
-								<a href="">Dealer Portal</a>
+				<a href="">Product Support <br>
+					<a href="">Product Registration<br>
+						<a href="">Find an Authorized Dealer<br>
+							<a href="">Sales Agent Locator <br>
+								<a href="">Dealer Portal
 			</div>
 			<div class="giuatotrai2">
 				Enter your email address below to receive periodic communication from Fanimation.
@@ -587,8 +662,8 @@
 				© 2020 Fanimation. All rights reserved.
 			</div>
 			<div class="phai">
-				<a id="aa" href="">PRIVACY POLICY </a>
-					<a href="">TERMS & CONDITIONS </a>
+				<a id="aa" href="">PRIVACY POLICY
+					<a href="">TERMS & CONDITIONS
 			</div>
 		</div>
 	</div>
