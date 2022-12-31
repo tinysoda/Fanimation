@@ -15,6 +15,7 @@
 .anh img{
 	height: auto;
 	width: 90%;
+	margin-left: 20px;
 }
 
 
@@ -28,39 +29,20 @@
 	font-weight: bold;
 	font-family: arial;
 	list-style-type: none;
-	display: block;
+	display: flex;
 	color: white;
-}
-
-ul.menu11{
-width: 200px;
-height: auto;
-position: absolute;
-top :70px;
-background-color: white;
-margin-left: 20px;
-padding-top: 15px;
-line-height: 40px;
-padding-left: 20px;
-display: none;
-z-index: 2;
-}
-
-
-.menu11 li a{
-	color: #868686;
-	font-size: 15px;
-	font-weight: bold;
-	font-family: arial;
-	padding: 0;
-	font-weight: normal;
+	height: 85px;
+	align-items: center;
 
 }
-
 
 .menu1 li:hover ul.menu11{
 	display: block;
 
+}
+
+.menu1 li a:hover {
+	color: red;
 }
 
 .search{
@@ -89,13 +71,6 @@ z-index: 2;
 	outline: none;
 	font-size: 25px;
 	background: none;
-}
-.test{
-	width: 100%;
-	height: 385px;
-	background-color: white;
-	font-size: 50px;
-		color: white;
 }
 .tren{
 	background-color: #53284f;
@@ -185,8 +160,8 @@ width: 400px;
 
 .email form{
 	position: absolute;
-	top: 1570px;
-	left: -200px;
+	top: 3160px;
+	left: -250px;
 	border: none;
 	outline: none;
 	font-size: 18px;
@@ -281,4 +256,8 @@ width: 400px;
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
+}
+
+.Billing{
+	width: 20px;
 }
