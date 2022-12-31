@@ -1,0 +1,89 @@
+
+.trai{
+	display: flex;
+}
+
+form{
+	width: 460px;
+	height: 560px;
+	background-color: #f2f2f2;
+	border: 1px dotted;
+	margin-left: 350px;
+	
+}
+
+.Billing{
+	width: 200px;
+	float: left;
+	margin-left: 20px;
+
+}
+
+ input{
+	margin-bottom: 20px;
+	margin-top: 5px;
+	height: 40px;
+	width: 200px;
+
+}
+
+i{
+	font-size: 40px;
+	margin-bottom: 20px;
+	margin-top: 11px;
+	margin-left: 20px;
+	color:navy
+}
+.duoi1{
+	width: 220px;
+}
+
+
+.duoi1 input{
+	width: 80px;
+}
+.duoi11{
+	width: 85px;
+	float: left;
+}
+
+button{
+	margin-left: 20px;
+	font-size: 20px;
+	padding: 8px 120px;
+	background-color: #555;
+	color: white;
+}
+
+button:hover{
+	background-color: #603030;
+}
+
+.cart{
+	margin-left: 60px;
+	background-color: #f2f2f2;
+	border: 1px dotted;
+	height: 300px;
+	width: 200px;
+}
+
+.cart i{
+	font-size: 15px;
+	margin-left: 9px;
+}
+
+.cart td {
+	text-align: center;
+	padding-top: 7px;
+}
+table{
+	width: 200px;
+}
+.cart a {
+	text-decoration: none;
+	color: #2196F3;
+}
+
+.total{
+	height: 120px;
+}
