@@ -22,10 +22,11 @@
 .template-content{
     margin:20px;
     padding-left: 20px;
+    /* padding-top: 40px; */
 
 }
 h5{ 
-    margin-top: 50px;
+    margin-top: 80px;
     font-size: 18px;
     color: #5e5a5b;
     font-family:'Open Sans', 'Helvetica Neue', sans-serif;
@@ -34,8 +35,8 @@ h2{
     font-size: 44px;
     color: #444245;
     font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 20px;
+   
+    margin-bottom: 10px;
 }
 .content-title{
     font-size: 20px;
@@ -54,7 +55,7 @@ h2{
     padding:  20px;
     width:100px;
     font-family: "Quicksand";
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .template-img_1{
@@ -88,12 +89,14 @@ h2{
     width: 50%;
     max-width: 430px;
     margin-top: 184px;
+  
 }
 .template-img{
     position: absolute;
     z-index: 2;
     top: 0;
     left: 0;
+    
     
 }
 .img-home_location{
@@ -130,7 +133,7 @@ h2{
     margin: 0;
     padding: 0;
     background-size: cover;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 
 }
 .template-img_1 img{
