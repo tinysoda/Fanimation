@@ -60,3 +60,14 @@ td:last-child{
 th:last-child{
     text-align: right;
 }
+.submit{
+    float:right;
+    padding: 10px 24px;
+    background-color: #53284f;
+    color: #fff;
+    border-radius: 4px;
+}
+.submit:hover{
+    background-color: #fff;
+    color: black;
+}

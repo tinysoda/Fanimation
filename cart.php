@@ -191,7 +191,7 @@
 					</div>
 				</div>
 			</td>
-			<td><input type="number" name="" value="1"></td>
+			<td><input type="number" name="" min="0" max="50"></td>
 			<td>50.000</td>	
 		</tr>
 		<tr>
@@ -207,7 +207,7 @@
 					</div>
 				</div>
 			</td>
-			<td><input type="number" name="" value="1"></td>
+			<td><input type="number" name="" min="0" max="50"></td>
 			<td>50.000</td>	
 		</tr>
 		<tr>
@@ -223,7 +223,7 @@
 					</div>
 				</div>
 			</td>
-			<td><input type="number" name="" value="1"></td>
+			<td><input type="number" name="" min="0" max="50"></td>
 			<td>50.000</td>	
 		</tr>
 	</table>
@@ -241,8 +241,9 @@
 				<td>Total</td>
 				<td>200.000</td>
 			</tr>
-		</table>
+		</table>	
 	</div>
+	<button class="submit" type="submit">Submit</button>
    </div>
 
    <div class="footer">
