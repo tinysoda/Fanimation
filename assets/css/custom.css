@@ -1,0 +1,295 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+.header{
+	width: 100%;
+	height: 85px;
+	background-color: #53284f;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.anh img{
+	height: auto;
+	width: 90%;
+}
+
+
+.menu1{
+	display: flex;
+}
+.menu1 li a{
+	font-size: 15px;
+	padding-left: 20px;
+	position: relative;
+	font-weight: bold;
+	font-family: arial;
+	list-style-type: none;
+	display: block;
+	color: white;
+}
+
+ul.menu11{
+width: 200px;
+height: auto;
+position: absolute;
+top :70px;
+background-color: white;
+margin-left: 20px;
+padding-top: 15px;
+line-height: 40px;
+padding-left: 20px;
+display: none;
+z-index: 2;
+}
+
+
+.menu11 li a{
+	color: #868686;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: arial;
+	padding: 0;
+	font-weight: normal;
+
+}
+
+
+.menu1 li:hover ul.menu11{
+	display: block;
+
+}
+
+.search{
+	position: absolute;
+	right: 20px;
+	border: solid white;
+	background-color: white;
+	border-radius: 20px;
+}
+
+.search input{
+	width: 76%;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding: 10px 15px;
+	border-radius: 24px;
+
+}
+
+.search button{
+	position: absolute;
+	right: 13px;
+	top: 6px;
+	border: none;
+	outline: none;
+	font-size: 25px;
+	background: none;
+}
+.test{
+	width: 100%;
+	height: 385px;
+	background-color: white;
+	font-size: 50px;
+		color: white;
+}
+.tren{
+	background-color: #53284f;
+	width: 100%;
+	height: 110px;
+	display: flex;
+	position: relative;
+	color: white;
+	z-index: 22222222222222;
+}
+.trai h2{
+ font-size: 25px;
+ position: absolute;
+ top: 28px;
+ left: 31px;
+ 	color: white;
+
+
+}
+
+.giua h2{
+font-size: 17px;
+ position: absolute;
+  top: 28px;
+ left: 320px;
+ width: 650px;
+ 	color: white;
+}
+
+.phai h2{
+ position: absolute;
+  top: 29px;
+ left: 1025px;
+ font-size: 13px;
+ border: solid;
+ padding: 10px 13px;
+ border-radius: 4px;
+ 	color: white;
+}
+
+h2{
+ font-weight: normal;
+}
+
+ .phai h2:hover{
+	 background-color: white;
+	 color: #666;
+}
+
+.giuato{
+	height: 280px;
+	background-color: white;
+	display: flex;
+}
+
+.giuatotrai{
+margin-top: 50px;
+margin-left: 90px;
+color: #444245;
+line-height: 32px;
+font-family: arial;
+font-size: 14px;
+	}
+
+.giuatotrai1{
+margin-top: 50px;
+margin-left: 20px;
+color: #444245;
+font-family: arial;
+font-size: 14px;
+	}
+.giuatotrai a{
+	color: #444245;
+}
+.giuatotrai2{
+margin-top: 50px;
+margin-left: 100px;
+color: #444245;
+font-family: arial;
+font-size: 15px;
+width: 400px;
+	}
+
+.email{
+	background-color: black;
+}
+
+.email form{
+	position: absolute;
+	top: 1570px;
+	left: -200px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding: 15px 50px;
+	border-radius: 24px;
+}
+
+.email button{
+	border: solid;
+	padding: 15px 25px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	margin-right: -20px;
+}
+
+.email button:hover{
+	background-color: #53284f;
+}
+
+.icon a i{
+	margin-top: 250px;
+	color: #53284f;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+.cuoi{
+	background-color: #444245;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cuoi .trai{
+	color: white;
+	padding-left: 20px;
+
+}
+.cuoi .phai{
+	padding-left: 680px;
+}
+.cuoi .phai a{
+	color: white;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 13px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+#aa{
+	border-right: solid white;
+}
+.container {
+    padding: 16px;
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 3;
+	width: auto;
+	height: auto;
+	left: 39%;
+	right: 39%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: auto;
+}
+
+.modal-content {
+	background-color: white;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: auto; 
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 5px;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+.product-modal {
+    display: none; 
+    position: fixed;
+	z-index: 3;
+	height: 80%;
+	left: 35%;
+	right: 35%;
+    overflow: auto; 
+    background-color: whitesmoke;
+	padding-top: auto;
+}
