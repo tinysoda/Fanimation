@@ -1,7 +1,7 @@
 <?php
-require_once 'connection.php';
+include ('admin/db.php');
 $sql = "select * from product";
-$all_product = $conn->query($sql);
+$all_product = mysqli_query($db,$sql);
 ?>
 
 <!DOCTYPE html>
@@ -217,7 +217,7 @@ $all_product = $conn->query($sql);
 
             <div class = "posts-collect">
                 <div class = "posts-main-container">
-                <?php
+				<?php
                 while ($row = mysqli_fetch_assoc($all_product)) {
                     ?>
                     <div class = "all <?php echo $row["type"]; ?>">
