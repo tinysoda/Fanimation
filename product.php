@@ -131,32 +131,7 @@ $all_product = mysqli_query($db,$sql);
 		</form>
 		<br><br>
 	</div>
-    <div id="id03" class="product-modal container">
-			<div class="">
-				<span onclick="document.getElementById('id03').style.display = 'none'" class="close" title="Đóng">&times;</span>
-			</div>
-			<div class="container">
-                <?php
-                while($row = mysqli_fetch_assoc($all_product)){
-                ?>
-                    <div class="card">
-                        <div class="image">
-                            <img src="<?php echo $row["thumbnail"]; ?>" alt="">
-                        </div>
-                        <div class="caption">
-                            <p class="product_name"><?php echo $row["product_name"]; ?></p>
-                            <p class="price"><b><?php echo $row["price"]; ?> $</b></p>
-                            <p class="type"><?php echo $row["type"]; ?></p>
-                            <p class="brand"><?php echo $row["brand"]; ?></p>
-                            <p class="description"><?php echo $row["description"]; ?></p>
-                        </div>
-                        <button class="add">Add to cart</button>
-                    </div>
-                <?php
-                }
-                ?>
-			</div>
-	</div>
+
     <section class="slider-homepage" data-flickity='{
         "cellAlign" : "left",
         "contain" : true,
@@ -192,19 +167,19 @@ $all_product = mysqli_query($db,$sql);
                         <span><i class = "fas fa-navicon"></i></span>
                         <li>All Products</li>
                     </div>
-                    <div class = "category-title" id = "celling fan">
+                    <div class = "category-title" id = "celling-fans">
                         <span><i class = "fas fa-navicon"></i></span>
                         <li>Celling Fans</li>
                     </div>
-                    <div class = "category-title" id = "pedestal fan">
+                    <div class = "category-title" id = "pedestal-fans">
                         <span><i class = "fas fa-navicon"></i></span>
                         <li>Pedestal Fans</li>
                     </div>
-                    <div class = "category-title" id = "wall fan">
+                    <div class = "category-title" id = "wall-fans">
                         <span><i class = "fas fa-navicon"></i></span>
                         <li>Wall Fans</li>
                     </div>
-                    <div class = "category-title" id = "exhaust fan">
+                    <div class = "category-title" id = "exhaust-fans">
                         <span><i class = "fas fa-navicon"></i></span>
                         <li>Exhaust Fans</li>
                     </div>
@@ -228,7 +203,7 @@ $all_product = mysqli_query($db,$sql);
 
                         <div class = "post-content">
                             <div class = "post-content-top">
-                                <span><i class = "fas fa-coins"></i><?php echo $row["price"]; ?></span>
+                                <span><i class = "fas fa-dollar"></i><?php echo $row["price"]; ?></span>
                                 <span>
                                     <i class = "fas fa-comment"></i>
                                 </span>
