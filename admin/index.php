@@ -28,7 +28,7 @@ if (isset($_GET['logout'])) {
         <h1>Welcome to admin page <span></span></h1>
         <p>Pick your task</p>
         <a href="product.php"class="btn">Product</a>
-        <a href=""class="btn">User</a>
+        <a href="user.php"class="btn">User</a>
         <a href="index.php?logout='1'" class="btn">Log out</a>
     </div>
 </div>
