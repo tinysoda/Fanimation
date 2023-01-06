@@ -4,6 +4,7 @@ session_start();
 // initializing variables
 $username = "";
 $email    = "";
+$tel = "";
 $errors = array(); 
 
 // connect to the database

@@ -21,16 +21,18 @@ if (isset($_GET['logout'])) {
     <title>Document</title>
 </head>
 <body>
-    <div class="sidebar">
-        <?php  if (isset($_SESSION['username'])) : ?>
-            <p>Welcome, <strong><?php echo $_SESSION['username']; ?></strong>!</p>
-            <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
-        <?php endif ?>
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+  
+<div class="container">
+    <div class="content">
+        <h3>Hi, <span><?php echo $_SESSION['username']; ?></span></h3>
+        <h1>Welcome to admin page <span></span></h1>
+        <p>Pick your task</p>
+        <a href="product.php"class="btn">Product</a>
+        <a href=""class="btn">User</a>
+        <a href="index.php?logout='1'" class="btn">Log out</a>
     </div>
+</div>
+            
 
     
 
