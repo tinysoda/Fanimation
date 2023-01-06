@@ -1,10 +1,6 @@
 <?php
 include ("db.php");
 
-if (!isset($_SESSION['tel'])) {
-    $_SESSION['msg'] = "You are not an admin";
-    header('location: ../index.html');
-}
 if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
     header('location: login.php');
