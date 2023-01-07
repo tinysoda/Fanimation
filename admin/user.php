@@ -19,7 +19,7 @@
 </style>
 <body>
     <nav class="navbar justify-content-center fs-3 mb-5" style="background:#53284f; color:#fff">
-        PRODUCT LIST
+        USER LIST
     </nav>
 
     <div class="container">
