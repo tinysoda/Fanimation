@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 07, 2023 lúc 08:15 AM
+-- Thời gian đã tạo: Th1 07, 2023 lúc 08:56 AM
 -- Phiên bản máy phục vụ: 10.4.25-MariaDB
 -- Phiên bản PHP: 8.1.10
 
@@ -32,7 +32,8 @@ CREATE TABLE `admin` (
   `admin_name` varchar(50) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
   `password` varchar(32) NOT NULL,
-  `tel_num` varchar(15) DEFAULT NULL
+  `tel_num` varchar(15) DEFAULT NULL,
+  `commission` tinyint(5) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -143,7 +144,8 @@ CREATE TABLE `user` (
   `user_name` varchar(50) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
   `password` varchar(32) NOT NULL,
-  `tel_num` varchar(15) DEFAULT NULL
+  `tel_num` varchar(15) DEFAULT NULL,
+  `commission` tinyint(5) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
