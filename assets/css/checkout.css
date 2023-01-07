@@ -64,7 +64,7 @@ button:hover{
 	background-color: #f2f2f2;
 	border: 1px dotted;
 	height: 300px;
-	width: auto;
+	width: 200px;
 }
 
 .cart i{
@@ -75,8 +75,6 @@ button:hover{
 .cart td {
 	text-align: center;
 	padding-top: 7px;
-	width: auto;
-	padding-right: 20px;
 }
 table{
 	width: 200px;
