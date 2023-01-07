@@ -38,6 +38,7 @@ if(isset($_POST['submit'])){
     <div class="container">
         <div class="text-center mb-4">
             <h3>Product Info</h3>
+            <p class="text-muted">Click sumbit after add new product</p>
         </div>
 
         <div class="container d-flex justify-content-center">
