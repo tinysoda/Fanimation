@@ -33,7 +33,7 @@ CREATE TABLE `admin` (
   `email` varchar(50) DEFAULT NULL,
   `password` varchar(32) NOT NULL,
   `tel_num` varchar(15) DEFAULT NULL,
-  `status` tinyint(5) NOT NULL DEFAULT 1
+  `commission` tinyint(5) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -145,7 +145,7 @@ CREATE TABLE `user` (
   `email` varchar(50) DEFAULT NULL,
   `password` varchar(32) NOT NULL,
   `tel_num` varchar(15) DEFAULT NULL,
-  `status` tinyint(5) NOT NULL DEFAULT 0
+  `commission` tinyint(5) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
