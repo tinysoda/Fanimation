@@ -64,11 +64,7 @@ button:hover{
 	background-color: #f2f2f2;
 	border: 1px dotted;
 	height: 300px;
-<<<<<<< HEAD
-	width: auto;
-=======
 	width: 200px;
->>>>>>> 44878425841557946f73c2fd305ff8c24a2f9ec8
 }
 
 .cart i{
@@ -79,11 +75,6 @@ button:hover{
 .cart td {
 	text-align: center;
 	padding-top: 7px;
-<<<<<<< HEAD
-	width: auto;
-	padding-right: 20px;
-=======
->>>>>>> 44878425841557946f73c2fd305ff8c24a2f9ec8
 }
 table{
 	width: 200px;
@@ -95,8 +86,4 @@ table{
 
 .total{
 	height: 120px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 44878425841557946f73c2fd305ff8c24a2f9ec8

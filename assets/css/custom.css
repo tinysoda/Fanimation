@@ -189,7 +189,7 @@ width: 400px;
 .email form{
 	position: absolute;
 	top: 200px;
-	left: 860px;
+	left: 780px;
 	border: none;
 	outline: none;
 	font-size: 18px;
@@ -291,5 +291,14 @@ width: 400px;
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
-
-
+.product-modal {
+    display: none; 
+    position: fixed;
+	z-index: 3;
+	height: 80%;
+	left: 35%;
+	right: 35%;
+    overflow: auto; 
+    background-color: whitesmoke;
+	padding-top: auto;
+}

@@ -152,3 +152,62 @@ body{
 .active{
     background: #53284f;
 }
+.card{
+    max-width: 300px;
+    flex:1 1 210px;
+    text-align: center;
+    height: 600px;
+    margin: 20px;
+}
+.image{
+    height:50%;
+    margin-bottom: 20px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.caption{
+    padding-left: 1em;
+    text-align: left;
+}
+del{
+    text-decoration: line-through;
+}
+.card button{
+    border: 2px solid black;
+    padding: 1em;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 2em;
+    font-weight: bold;
+    position: relative;
+}
+.card button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+    margin: 0;
+}
+.card button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+}
+.card button:hover::before{
+    width: 30%;
+}
+.card button:hover::after{
+    width: 30%;
+}

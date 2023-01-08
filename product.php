@@ -1,14 +1,18 @@
+<?php
+include ('admin/db.php');
+$sql = "select * from product";
+$all_product = mysqli_query($db,$sql);
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/custom.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="assets/css/slider.css">
 	<link rel="stylesheet" href="assets/css/template.css">
-	<link rel="stylesheet" href="assets/css/product.css">
-	<link rel="stylesheet" href="assets/css/cart.css">
 	<script src="assets/js/slider.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<title></title>
@@ -19,11 +23,14 @@
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/category.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="header">
+	<div class="header">
 		<div class="anh">
-			<a href=""><img src="images/2.jpg"> </a>
+			<a href="index.html"><img src="images/2.jpg"> </a>
 		</div>
 		<div class="search">
 			<form>
@@ -41,31 +48,11 @@
 		</div>
 		<div class="menu">
 			<ul class="menu1">
-				<li><a href="">Product</a>
-					<ul class="menu11">
-						<li><a href="">All Products</a></li>
-						<li><a href="">Damp Rated Fans</a></li>
-						<li><a href="">Wet Rated Fans</a></li>
-					</ul>
+				<li><a href="product.html">Product</a>
 				</li>
 				<li><a href="">Help center</a>
-					<ul class="menu11">
-						<li><a href="">Contact Tech Support</a></li>
-						<li><a href="">Product Registration</a></li>
-						<li><a href="">Find an Authorized Dealer</a></li>
-						<li><a href="">Choosing a Fan</a></li>
-						<li><a href="">Dealer Portal</a></li>
-						<li><a href="">General Inquiries</a></li>
-					</ul>
 				</li>
 				<li><a href="">Explore</a>
-					<ul class="menu11">
-						<li><a href="">CCT Select</a></li>
-						<li><a href="">Smart Controls</a></li>
-						<li><a href="">Virtual Showroom</a></li>
-						<li><a href="">Antique Fan Museum</a></li>
-						<li><a href="">Download Product Catalog</a></li>
-					</ul>
 				</li>
 				<li><a onclick="document.getElementById('id01').style.display = 'block'"><strong>Login</strong></a></li>
                 <li><a onclick="document.getElementById('id02').style.display = 'block'"><strong>Register</strong></a></li>
@@ -139,114 +126,101 @@
 							<br><br>
 							<button type="submit" style="width: auto;" class="btn btn-success">Register</button>
 							<br><br>
-							</div>
-							<br><br>
-							</form>
-							<br><br>
-							</div>
-
-	<section class="slider-homepage" data-flickity='{
-	"cellAlign" : "left",
-	"contain" : true,
-	"pageDots" : false,
-	"wrapAround" : false,
-	"draggable": true
-   }'>
-   <div class="slider" style="background-image: url('images/coop_sale_head2-copy.jpg');">
-			<div class="slider-chars">
-				<div class="sl-chars">
-					<div class="chars wow animate__fadeInDown" data-wow-duration="2s">C</div>
-					<div class="chars wow animate__fadeInUp" data-wow-duration="2s">a</div>
-					<div class="chars sl-chars_margin wow animate__fadeInDown" data-wow-duration="2s">r</div>
-					<div class="chars wow animate__fadeInUp" data-wow-duration="2s">t</div>
-					
-				</div>
-				<div class="layer ">
-					<p>The Coop.See it and other deals on our Closerout Store</p>
-
-				</div>
-				<div class="btn">
-					<a>Shop Now</a>
-				</div>
 			</div>
-		</div>
-	</section>
-   <div class="small-container main-cart">
-   	<table class="cart-table">
-		<tr>
-			<th>Product</th>
-			<th>Quantity</th>
-			<th>SubTotal</th>
-		</tr>
-		<tr>
-			<td>
-				<div class="cart-info">
-					<img src="images/2022_new.jpg" class="cart-img">
-
-					<div class="info">
-						<p>Scythe of Death</p>
-						<small>Price:50.000</small>
-						<br>
-						<a href="" style="font-size: 20px;">Remove</a> 
-					</div>
-				</div>
-			</td>
-			<td><input type="number" name="" min="0" max="50"></td>
-			<td>50.000</td>	
-		</tr>
-		<tr>
-			<td>
-				<div class="cart-info">
-					<img src="images/air-apparent-banner-bkgr-2.jpg" class="cart-img">
-
-					<div class="info">
-						<p>Scythe of Death</p>
-						<small>Price:50.000</small>
-						<br>
-						<a href="" style="font-size: 20px;">Remove</a> 
-					</div>
-				</div>
-			</td>
-			<td><input type="number" name="" min="0" max="50"></td>
-			<td>50.000</td>	
-		</tr>
-		<tr>
-			<td>
-				<div class="cart-info">
-					<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" class="cart-img">
-
-					<div class="info">
-						<p>Scythe of Death</p>
-						<small>Price:50.000</small>
-						<br>
-						<a href="" style="font-size: 20px;">Remove</a> 
-					</div>
-				</div>
-			</td>
-			<td><input type="number" name="" min="0" max="50"></td>
-			<td>50.000</td>	
-		</tr>
-	</table>
-	<div class="total-price">
-		<table class="price-table">
-			<tr>
-				<td>Subtotal</td>
-				<td>150.000</td>
-			</tr>
-			<tr>
-				<td>Tax</td>
-				<td>50.000</td>
-			</tr>
-			<tr>
-				<td>Total</td>
-				<td>200.000</td>
-			</tr>
-		</table>	
+			<br><br>
+		</form>
+		<br><br>
 	</div>
-	<button class="submit" type="submit">Submit</button>
-   </div>
 
-   <div class="footer">
+    <section class="slider-homepage" data-flickity='{
+        "cellAlign" : "left",
+        "contain" : true,
+        "pageDots" : false,
+        "wrapAround" : false,
+        "draggable": true
+       }'>
+            <div class="slider" style="background-image: url('images/2022_new.jpg');">
+                <div class="slider-chars">
+                    <div class="sl-chars">
+                        <div class="chars wow animate__fadeInDown" data-wow-duration="2s">P</div>
+                        <div class="chars wow animate__fadeInUp" data-wow-duration="2s">R</div>
+                        <div class="chars sl-chars_margin wow animate__fadeInDown" data-wow-duration="2s">O</div>
+                        <div class="chars wow animate__fadeInUp" data-wow-duration="2s">D</div>
+                        <div class="chars wow animate__fadeInDown" data-wow-duration="2s">U</div>
+                        <div class="chars sl-chars_margin wow animate__fadeInUp" data-wow-duration="2s">C</div>
+                        <div class="chars wow animate__fadeInDown" data-wow-duration="2s">T</div>
+                        <div class="chars wow animate__fadeInUp" data-wow-duration="2s">S</div>
+                    </div>
+                    <div class="layer ">
+                        <p>All Products In One Page</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class = "main-container">
+        <h2>Categories</h2>
+        <div class = "filter-container">
+            <div class = "category-head">
+                <ul>
+                    <div class = "category-title active" id = "all">
+                        <span><i class = "fas fa-navicon"></i></span>
+                        <li>All Products</li>
+                    </div>
+                    <div class = "category-title" id = "celling-fans">
+                        <span><i class = "fas fa-navicon"></i></span>
+                        <li>Celling Fans</li>
+                    </div>
+                    <div class = "category-title" id = "pedestal-fans">
+                        <span><i class = "fas fa-navicon"></i></span>
+                        <li>Pedestal Fans</li>
+                    </div>
+                    <div class = "category-title" id = "wall-fans">
+                        <span><i class = "fas fa-navicon"></i></span>
+                        <li>Wall Fans</li>
+                    </div>
+                    <div class = "category-title" id = "exhaust-fans">
+                        <span><i class = "fas fa-navicon"></i></span>
+                        <li>Exhaust Fans</li>
+                    </div>
+                    <div class = "category-title" id = "accessories">
+                        <span><i class = "fas fa-navicon"></i></span>
+                        <li>Accessories</li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class = "posts-collect">
+                <div class = "posts-main-container">
+				<?php
+                while ($row = mysqli_fetch_assoc($all_product)) {
+                    ?>
+                    <div class = "all <?php echo $row["type"]; ?>">
+                        <div class = "post-img">
+                            <img src = "<?php echo $row["thumbnail"]; ?>" alt = "post">
+                            <span class = "category-name"><?php echo $row["type"]; ?></span>
+                        </div>
+
+                        <div class = "post-content">
+                            <div class = "post-content-top">
+                                <span><i class = "fas fa-dollar"></i><?php echo $row["price"]; ?></span>
+                                <span>
+                                    <i class = "fas fa-comment"></i>
+                                </span>
+                            </div>
+                            <h2><?php echo $row["product_name"]; ?></h2>
+                        </div>
+                        <a onclick="document.getElementById('id03').style.display = 'block'"><button type = "button" class = "read-btn">More Info</button></a>
+                    </div>
+                    <?php
+                }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="footer">
 		<div class="tren">
 			<div class="trai">
 				<h2>Fanimation Catalog</h2>
@@ -306,6 +280,14 @@
 		</div>
 	</div>
 
-	
+	<script src="./assets/js/wow.min.js">
+	</script>
+    <script src = "assets/js/category_product.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
+
+
+
 </html>
