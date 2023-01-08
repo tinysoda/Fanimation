@@ -42,13 +42,15 @@ CREATE TABLE `admin` (
 -- Cấu trúc bảng cho bảng `cart`
 --
 
-CREATE TABLE `cart` (
+CREATE TABLE `cartaa` (
   `cartID` bigint(20) NOT NULL,
   `productID` bigint(20) NOT NULL,
   `quantity` tinyint(5) NOT NULL DEFAULT 0,
   `userID` bigint(20) NOT NULL,
   `status` tinyint(10) NOT NULL DEFAULT 0,
-  `user_name` varchar(50) DEFAULT NULL
+  `user_name` varchar(50) DEFAULT NULL,
+  `thumbnail` varchar(1000) NOT NULL,
+  `price` varchar(20) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -252,8 +254,7 @@ ALTER TABLE `user`
 -- Các ràng buộc cho bảng `cart`
 --
 ALTER TABLE `cart`
-  ADD CONSTRAINT `fk_productID_cart` FOREIGN KEY (`productID`) REFERENCES `product` (`productID`),
-  ADD CONSTRAINT `fk_userID_cart` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`);
+  ADD CONSTRAINT `fk_productID_cart` FOREIGN KEY (`productID`) REFERENCES `product` (`productID`);
 
 --
 -- Các ràng buộc cho bảng `order`
