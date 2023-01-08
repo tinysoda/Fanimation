@@ -32,13 +32,6 @@
 				<input class="searchinput" type="text" name="aaaa">
 				<button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
 			</form>
-
-			<div class="email">
-				<form>
-					<input type="text" name="aaac" placeholder="Email Address">
-					<button type="submit">SUBSCRIBE</button>
-				</form>
-			</div> 
 			
 		</div>
 		<<div class="menu">
