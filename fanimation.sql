@@ -165,7 +165,7 @@ ALTER TABLE `admin`
 --
 -- Chỉ mục cho bảng `cart`
 --
-ALTER TABLE `cart`
+ALTER TABLE `cartaa`
   ADD PRIMARY KEY (`cartID`),
   ADD KEY `idx_cart_user` (`userID`),
   ADD KEY `fk_productID_cart` (`productID`);
@@ -219,7 +219,7 @@ ALTER TABLE `admin`
 --
 -- AUTO_INCREMENT cho bảng `cart`
 --
-ALTER TABLE `cart`
+ALTER TABLE `cartaa`
   MODIFY `cartID` bigint(20) NOT NULL AUTO_INCREMENT;
 
 --
@@ -253,7 +253,7 @@ ALTER TABLE `user`
 --
 -- Các ràng buộc cho bảng `cart`
 --
-ALTER TABLE `cart`
+ALTER TABLE `cartaa`
   ADD CONSTRAINT `fk_productID_cart` FOREIGN KEY (`productID`) REFERENCES `product` (`productID`);
 
 --
