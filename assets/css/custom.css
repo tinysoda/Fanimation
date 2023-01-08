@@ -217,7 +217,7 @@ width: 400px;
 }
 
 .icon a i{
-	margin-top: 250px;
+	margin-top: 280px;
 	color: #53284f;
 	font-size: 30px;
 	margin-left: 20px;
@@ -301,4 +301,14 @@ width: 400px;
     overflow: auto; 
     background-color: whitesmoke;
 	padding-top: auto;
+}
+
+li a i{
+	color: red;
+	margin-left: 600px;
+	font-size: 35px;
+}
+
+li a i:hover{
+	color: #af0202;
 }

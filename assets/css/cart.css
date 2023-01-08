@@ -1,73 +1,126 @@
-.small-container{
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+.tonhat{
+	display: flex;
+	justify-content: center;
 }
-.main-cart{
-    margin: 80px auto;
+
+.to{
+	display: flex;
+	justify-content: center;
 }
-.cart-table{
-    width: 100%;
-    border-collapse: collapse;
+a{
+	text-decoration: none;
 }
-.cart-img{
-    width: 250px;
-    height:180px;
-    margin-right: 10px;
+h2{
+	text-align: center;
+
 }
-.cart-info{
-    display: flex;
-    flex-wrap: wrap;
+.cuoi{
+	padding-top: 20px;
 }
-.info{
-    font-size: 25px;
+
+td{
+	height: 70px;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
-.cart-table th{
-    text-align: left;
-    padding: 5px;
-    color:#fff;
-    background: #53284f;
-    font-weight: normal;
+
+
+.a td{
+	padding-bottom: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 40px;
 }
-.cart-table td{
-    padding: 10px 5px;
+
+.b td{
+	font-weight: bold;
 }
-.cart-table td input{
-    width: 50px;
-    height: 30px;
-    padding: 5px;
+.anh{
+	width: 130px;
+	height: 75px;
 }
-.cart-table td a{
-    color: #53284f;
-    font-size: 12px;
+.title{
+	width: 350px;
 }
-.total-price{
-    display: flex;
-    justify-content: flex-end;
+.gia{
+	width: 120px;
 }
-.price-table{
-    border-top: 3px solid #53284f;
-    width: 100%;
-    max-width: 190px;
+.soluong{
+	width: 120px;
 }
-.price-table td{
-    padding-bottom: 10px;
+.total{
+	width: 140px;
 }
-td:last-child{
-    text-align: right;
+.thaotac{
+	width: 120px;
 }
-th:last-child{
-    text-align: right;
+table,th,td{
+	  border: 1px solid #ddd;
+  border-collapse: collapse;
 }
-.submit{
-    float:right;
-    padding: 10px 24px;
-    background-color: #53284f;
+.a td{
+	border-bottom: 2px solid #ddd;
+}
+.b td{
+	border: none;
+}
+.cuoi{
+	margin-left:850px;
+}
+.aab{
+	color: #fff;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+.aab:hover{
+	background-color: #216821;
+}
+
+.aaa{
     color: #fff;
-    border-radius: 4px;
+    background-color: #5bc0de;
+    border: none;
+    border: none;
+    border-radius: 25px;
+     padding: 10px 20px;
 }
-.submit:hover{
-    background-color: #fff;
-    color: black;
+.aaa:hover{
+	background-color: #18677e;
+}
+
+.aloa{
+	border: 1px solid #337ab7;
+	background-color: #337ab7;
+	color: white;
+	padding: 1px 5px;
+	border-radius: 8px;
+}
+.aloa:hover{
+	background-color: #235580;
+}
+.alo{
+	border: 1px solid #337ab7;
+	background-color: #337ab7;
+	color: white;
+	padding: 1px 7px;
+	border-radius: 8px;
+}
+.alo:hover{
+	background-color: #235580;
+}
+.thaotac button{
+	border-radius: 7px;
+	padding: 2px 10px;
+	border: 0.5px dotted;
+	background-color: #e4acac;
+}
+.thaotac button:hover{
+	background-color: #bc8686;
+	color: #eae7e7;
+	
 }

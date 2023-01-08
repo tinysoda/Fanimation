@@ -28,9 +28,9 @@ $all_product = mysqli_query($db,$sql);
 </head>
 
 <body>
-	<div class="header">
+	<section class="header">
 		<div class="anh">
-			<a href="index.html"><img src="images/2.jpg"> </a>
+			<a href="index.php"><img src="images/2.jpg"> </a>
 		</div>
 		<div class="search">
 			<form>
@@ -38,124 +38,34 @@ $all_product = mysqli_query($db,$sql);
 				<button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
 			</form>
 
-			<!-- <div class="email">
+			<div class="email">
 				<form>
 					<input type="text" name="aaac" placeholder="Email Address">
 					<button type="submit">SUBSCRIBE</button>
 				</form>
-			</div> -->
+			</div> 
 			
 		</div>
-		<div class="menu">
+		<<div class="menu">
 			<ul class="menu1">
-				<li><a href="product.html">Product</a>
+				<li><a href="product.php">Product</a>
+					
 				</li>
-				<li><a href="">Help center</a>
+				
+				<li><a href="user_login.php">Login</a>
+					
 				</li>
-				<li><a href="">Explore</a>
+				<li><a href="user_register.php">Resister</a>
+					
 				</li>
-				<li><a onclick="document.getElementById('id01').style.display = 'block'"><strong>Login</strong></a></li>
-                <li><a onclick="document.getElementById('id02').style.display = 'block'"><strong>Register</strong></a></li>
+
+				<li  ><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
+					
+				</li>
+			
 			</ul>
 		</div>
-	</div>
-	<div id="id01" class="modal container">
-		<form class="modal-content animate" method="post">
-			<div class="">
-				<span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="close"> &times; </span>
-			</div>
-			<div class="container">
-				<br><br>
-				<h3><strong>Login<strong></h3>
-							<br>
-							<label>Username: </label>
-							<br>
-							<input type="text" name="user_name" required>
-							<br>
-							<label>Password:  </label>
-							<br>
-							<input type="password" name="password" required>
-							<br><br>
-							<label>
-								<input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu
-							</label>
-							<br>
-							<span class="psw">Forgot <a href="#"> password?</a></span>
-							<br>
-							<span>Need an account ?<a onclick="document.getElementById('id02').style.display = 'block'"> Register</a> now.<span>
-							<br><br>
-							<button type="submit" name="login" style="width: auto;" class="btn btn-success">Login</button>
-							<br><br>
-			</div>
-			<br><br>                            
-		</form>
-		<br><br>
-	</div>
-	<div id="id02" class="modal container">
-		<form class="modal-content animate">
-			<div class="">
-				<span onclick="document.getElementById('id02').style.display = 'none'" class="close" title="Đóng">&times;</span>
-			</div>
-			<div class="container">
-				<br><br>
-				<h3><strong>Register<strong></h3>
-							<br>
-							<label>Username: </label>
-							<br>
-							<input type="text" name="user_name" required>
-							<br>
-							<label>Email: </label>
-							<br>
-							<input type="email" name="email" required>
-							<br>
-							<label>Tel number: </label>
-							<br>
-							<input type="tel" name="tel_num" required>
-							<br>
-							<label>Address: </label>
-							<br>
-							<input type="text" name="address" required>
-							<br>
-							<label>Password:  </label>
-							<br>
-							<input type="password" name="password" required>
-							<br>
-							<label>Re-enter password: </label>
-							<br>
-							<input type="password" name="repass" required>
-							<br><br>
-							<button type="submit" style="width: auto;" class="btn btn-success">Register</button>
-							<br><br>
-			</div>
-			<br><br>
-		</form>
-		<br><br>
-	</div>
-
-    <section class="slider-homepage" data-flickity='{
-        "cellAlign" : "left",
-        "contain" : true,
-        "pageDots" : false,
-        "wrapAround" : false,
-        "draggable": true
-       }'>
-            <div class="slider" style="background-image: url('images/2022_new.jpg');">
-                <div class="slider-chars">
-                    <div class="sl-chars">
-                        <div class="chars wow animate__fadeInDown" data-wow-duration="2s">P</div>
-                        <div class="chars wow animate__fadeInUp" data-wow-duration="2s">R</div>
-                        <div class="chars sl-chars_margin wow animate__fadeInDown" data-wow-duration="2s">O</div>
-                        <div class="chars wow animate__fadeInUp" data-wow-duration="2s">D</div>
-                        <div class="chars wow animate__fadeInDown" data-wow-duration="2s">U</div>
-                        <div class="chars sl-chars_margin wow animate__fadeInUp" data-wow-duration="2s">C</div>
-                        <div class="chars wow animate__fadeInDown" data-wow-duration="2s">T</div>
-                        <div class="chars wow animate__fadeInUp" data-wow-duration="2s">S</div>
-                    </div>
-                    <div class="layer ">
-                        <p>All Products In One Page</p>
-                    </div>
-                </div>
-            </div>
+	</section>
     </section>
 
     <div class = "main-container">
@@ -211,6 +121,7 @@ $all_product = mysqli_query($db,$sql);
                             <h2><?php echo $row["product_name"]; ?></h2>
                         </div>
                         <a onclick="document.getElementById('id03').style.display = 'block'"><button type = "button" class = "read-btn">More Info</button></a>
+                        	<a href="cart.php?id=<?php echo $row["productID"]?>"> <button> Thêm vào giỏ</button></a>
                     </div>
                     <?php
                 }
@@ -220,7 +131,7 @@ $all_product = mysqli_query($db,$sql);
         </div>
     </div>
 
-	<div class="footer">
+	<section class="footer">
 		<div class="tren">
 			<div class="trai">
 				<h2>Fanimation Catalog</h2>
@@ -247,37 +158,39 @@ $all_product = mysqli_query($db,$sql);
 				Fax: 866.482.5215
 			</div>
 			<div class="giuatotrai">
-				<a href="">Home <br>
-					<a href="">Blog<br>
-						<a href="">Antique Fan Museum<br>
-							<a href="">Contact
+				<a href="">Home <br></a>
+					<a href="">Blog<br></a>
+						<a href="">Antique Fan Museum<br></a>
+							<a href="">Contact </a>
 			</div>
 			<div class="giuatotrai">
-				<a href="">Products <br>
-					<a href="">Product Catalog<br>
-						<a href="">Choosing a Fan<br>
-							<a href="">Smart Controls
+				<a href="">Products <br></a>
+					
 			</div>
 			<div class="giuatotrai">
-				<a href="">Product Support <br>
-					<a href="">Product Registration<br>
-						<a href="">Find an Authorized Dealer<br>
-							<a href="">Sales Agent Locator <br>
-								<a href="">Dealer Portal
+				<a href="">Product Support</a> <br>
+				
 			</div>
 			<div class="giuatotrai2">
 				Enter your email address below to receive periodic communication from Fanimation.
 			</div>
+			<div class="email">
+				<form>
+					<input type="text" name="aaac" placeholder="Email Address">
+					<button type="submit">SUBSCRIBE</button>
+				</form>
+			</div>
 		</div>
 		<div class="cuoi">
 			<div class="trai">
-				© 2020 Fanimation. All rights reserved.
+				© 2022 Fanimation. All rights reserved.
 			</div>
 			<div class="phai">
-				<a id="aa" href="">PRIVACY POLICY
-					<a href="">TERMS & CONDITIONS
+				<a id="aa" href="">PRIVACY POLICY</a>
+					<a href="">TERMS & CONDITIONS</a>
 			</div>
 		</div>
+	</section>
 	</div>
 
 	<script src="./assets/js/wow.min.js">
