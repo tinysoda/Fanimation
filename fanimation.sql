@@ -50,6 +50,7 @@ CREATE TABLE `cartaa` (
   `status` tinyint(10) NOT NULL DEFAULT 0,
   `user_name` varchar(50) DEFAULT NULL,
   `thumbnail` varchar(1000) NOT NULL,
+`product_name` varchar(50) NOT NULL,
   `price` varchar(20) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
