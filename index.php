@@ -32,14 +32,6 @@
 				<input class="searchinput" type="text" name="aaaa">
 				<button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
 			</form>
-
-			<div class="email">
-				<form>
-					<input type="text" name="aaac" placeholder="Email Address">
-					<button type="submit">SUBSCRIBE</button>
-				</form>
-			</div> 
-			
 		</div>
 		<<div class="menu">
 			<ul class="menu1">
@@ -57,7 +49,7 @@
 				<li  ><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
 					
 				</li>
-				<li></li>
+			
 			</ul>
 		</div>
 	</section>
@@ -70,7 +62,7 @@
 	"wrapAround" : false,
 	"draggable": true
    }'>
-		<div class="slider" style="background-image: url('images/coop_sale_head2-copy.jpg');">
+		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/coop_sale_head2-copy.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars wow animate__fadeInDown" data-wow-duration="2s">H</div>
@@ -98,7 +90,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="slider" style="background-image: url('images/2022_new.jpg');">
+		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/2022_new.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">S</div>
@@ -121,7 +113,7 @@
 			</div>
 		</div>
 		<div class="slider"
-			style="background-image: url('images/kute_header_ns.jpg'), linear-gradient(#eb01a5, #d13531);">
+			style="background-image: url('http://localhost/hoc/Fanimation/images/kute_header_ns.jpg'), linear-gradient(#eb01a5, #d13531);">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">K</div>
@@ -140,7 +132,7 @@
 			</div>
 
 		</div>
-		<div class="slider" style="background-image: url('images/home-slide-wrap-2.jpg');">
+		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/home-slide-wrap-2.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">W</div>
@@ -158,7 +150,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="slider" style="background-image: url('images/home-slide-stellar-3.jpg');">
+		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/home-slide-stellar-3.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">S</div>
@@ -220,7 +212,7 @@
 
 					</div>
 					<div class="" style="width: 50%;">
-						<img src="images/home-location-bkgr-5.jpg" class="img-home_location">
+						<img src="http://localhost/hoc/Fanimation/images/home-location-bkgr-5.jpg" class="img-home_location">
 					</div>
 				</div>
 
@@ -246,7 +238,7 @@
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -274,7 +266,7 @@
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -301,7 +293,7 @@
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -328,7 +320,7 @@
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -366,7 +358,7 @@
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -394,7 +386,7 @@
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -421,7 +413,7 @@
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -448,7 +440,7 @@
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -485,10 +477,10 @@
 		<div class="inner-container">
 			<div class="column-inner">
 				<div class="column-inner-img-col-1 wow animate__fadeInLeft" data-wow-duration="2s">
-					<img src="images/showroomcollection2018_hover.jpg">
+					<img src="http://localhost/hoc/Fanimation/images/showroomcollection2018_hover.jpg">
 				</div>
 				<div class="column-inner-img-col-2 wow animate__fadeInRight" data-wow-duration="2s">
-					<img src="images/banner-fanimation-studio1_hover.jpg" alt="">
+					<img src="http://localhost/hoc/Fanimation/images/banner-fanimation-studio1_hover.jpg" alt="">
 
 				</div>
 
@@ -499,7 +491,7 @@
 		</div>
 		<div class="section-about_us relative">
 			<div class="template-inner ">
-				<div class="template-img_2" style="background-image: url('images/air-apparent-banner-bkgr-2.jpg');">
+				<div class="template-img_2" style="background-image: url('/images/air-apparent-banner-bkgr-2.jpg');">
 					<div class="inner-content ">
 						<div class="inner-content_about_us">
 							<div class="inner-content_air">
@@ -535,23 +527,21 @@
 				<h2>Fanimation’s focus is producing creative and functional fans that provide ultimate personal comfort
 					using the latest technology for energy efficiency and seamless control.</h2>
 			</div>
-			<div class="icon">
-				<a href=""><i class="fa-brands fa-twitter"></i>
-					<a href=""><i class="fa-brands fa-facebook"></i>
-						<a href=""><i class="fa-brands fa-youtube"></i>
-			</div>
+			
 			<div class="phai">
 				<h2>DOWNLOAD</h2>
 			</div>
 		</div>
+		<div class="giuatonhat">
 		<div class="giuato">
 			<div class="giuatotrai1">
-				Fanimation <br>
+				<b>Fanimation</b>	<br>
 				10983 Bennett Parkway <br>
 				Zionsville, IN 46077 <br>
 				Phone: 888.567.2055 <br>
 				Fax: 866.482.5215
 			</div>
+			
 			<div class="giuatotrai">
 				<a href="">Home <br></a>
 					<a href="">Blog<br></a>
@@ -576,13 +566,19 @@
 				</form>
 			</div>
 		</div>
+		<div class="icon">
+				<a href=""><i class="fa-brands fa-twitter"></i>
+					<a href=""><i class="fa-brands fa-facebook"></i>
+						<a href=""><i class="fa-brands fa-youtube"></i>
+			</div>
+			</div>
 		<div class="cuoi">
 			<div class="trai">
 				© 2022 Fanimation. All rights reserved.
 			</div>
 			<div class="phai">
-				<a id="aa" href="">PRIVACY POLICY</a>
-					<a href="">TERMS & CONDITIONS</a>
+				<a id="aa" href="policy.html">PRIVACY POLICY</a>
+					<a href="term.html">TERMS & CONDITIONS</a>
 			</div>
 		</div>
 	</section>

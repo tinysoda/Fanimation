@@ -120,8 +120,7 @@ $all_product = mysqli_query($db,$sql);
                             </div>
                             <h2><?php echo $row["product_name"]; ?></h2>
                         </div>
-                        <a onclick="document.getElementById('id03').style.display = 'block'"><button type = "button" class = "read-btn">More Info</button></a>
-                        	<a href="cart.php?id=<?php echo $row["productID"]?>"> <button> Thêm vào giỏ</button></a>
+                        <a href="cart.php?id=<?php echo $row["productID"]?>"> <button> Thêm vào giỏ</button> </a>
                     </div>
                     <?php
                 }
@@ -131,7 +130,7 @@ $all_product = mysqli_query($db,$sql);
         </div>
     </div>
 
-	<section class="footer">
+<section class="footer">
 		<div class="tren">
 			<div class="trai">
 				<h2>Fanimation Catalog</h2>
@@ -140,23 +139,21 @@ $all_product = mysqli_query($db,$sql);
 				<h2>Fanimation’s focus is producing creative and functional fans that provide ultimate personal comfort
 					using the latest technology for energy efficiency and seamless control.</h2>
 			</div>
-			<div class="icon">
-				<a href=""><i class="fa-brands fa-twitter"></i>
-					<a href=""><i class="fa-brands fa-facebook"></i>
-						<a href=""><i class="fa-brands fa-youtube"></i>
-			</div>
+			
 			<div class="phai">
 				<h2>DOWNLOAD</h2>
 			</div>
 		</div>
+		<div class="giuatonhat">
 		<div class="giuato">
 			<div class="giuatotrai1">
-				Fanimation <br>
+				<b>Fanimation</b>	<br>
 				10983 Bennett Parkway <br>
 				Zionsville, IN 46077 <br>
 				Phone: 888.567.2055 <br>
 				Fax: 866.482.5215
 			</div>
+			
 			<div class="giuatotrai">
 				<a href="">Home <br></a>
 					<a href="">Blog<br></a>
@@ -181,13 +178,19 @@ $all_product = mysqli_query($db,$sql);
 				</form>
 			</div>
 		</div>
+		<div class="icon">
+				<a href=""><i class="fa-brands fa-twitter"></i>
+					<a href=""><i class="fa-brands fa-facebook"></i>
+						<a href=""><i class="fa-brands fa-youtube"></i>
+			</div>
+			</div>
 		<div class="cuoi">
 			<div class="trai">
 				© 2022 Fanimation. All rights reserved.
 			</div>
 			<div class="phai">
-				<a id="aa" href="">PRIVACY POLICY</a>
-					<a href="">TERMS & CONDITIONS</a>
+				<a id="aa" href="policy.html">PRIVACY POLICY</a>
+					<a href="term.html">TERMS & CONDITIONS</a>
 			</div>
 		</div>
 	</section>

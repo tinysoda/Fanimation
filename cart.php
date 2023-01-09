@@ -1,16 +1,23 @@
 <?php
 require_once('del.php');
+session_start();
+$us=$_SESSION['username'];
 
 if(!empty($_GET)) {
 	if(isset($_GET['id'])){
 	$id=$_GET['id'];
-$sql = "select * from cartaa where productID=".$id;
+$sql = "select * from cart where productID='$id' and user_name ='$us'" ;
 $a = queryResult($sql);
 if ($a == null){
-$sql= "insert into cartaa (productID,thumbnail,product_name,price)select productID,thumbnail,product_name,price from product where productID=".$id;
+$sql= "insert into cart (productID,thumbnail,product_name,price)select productID,thumbnail,product_name,price from product where productID=".$id;
 query($sql);
-$sql="update cartaa set quantity = 1";
+$sql="update cart set quantity = 1";
 query($sql);
+
+if(isset($_SESSION['username'])){
+$sql="UPDATE `cart` SET user_name = '$us' WHERE cartID = ( select MAX(cartid)FROM cart)";
+query($sql);
+}
 header('Location: cart.php');
 }
 else{
@@ -25,19 +32,19 @@ if(isset($_GET['tru'])){
 	if($soluong<1){
 		$soluong=1;
 	}
-$sql="update cartaa set quantity=$soluong where cartID=".$tru;
+$sql="update cart set quantity=$soluong where cartID=".$tru;
 query($sql);
 }
 if(isset($_GET['cong'])){
 	$cong=$_GET['cong'];
 	$soluong=$_GET['soluong'];
 	$soluong=$soluong+1;
-$sql="update cartaa set quantity=$soluong where cartID=".$cong;
+$sql="update cart set quantity=$soluong where cartID=".$cong;
 query($sql);
 }
 }
 
-$sql = "select * from cartaa";
+$sql = "select * from cart where user_name ='$us'";
 $list = queryResult($sql);
 
 
@@ -46,7 +53,7 @@ if(!empty($_POST)) {
 	if(isset($_POST['cartID'])){
 	$id=$_POST['cartID'];
 
-$sql = "delete from cartaa where cartID= ".$id;
+$sql = "delete from cart where cartID= ".$id;
 query($sql);
 header('Location: cart.php');
 }
@@ -96,10 +103,10 @@ if(!empty($_POST)) {
                 <td ><img src='<?=$item['thumbnail']?>' class="anh" /> </td>
                 <td class="title" ><?=$item['product_name']?> </td>
                 <td class="gia">
-                <?=$item['price']?> </td>
+                <?=$item['price']?> $</td>
                  <td class="soluong"> <a href="cart.php?tru=<?=$item['cartID']?>&soluong=<?=$item['quantity']?>"><label class="alo">-</label></a>  <?=$item['quantity']?>  <a href="cart.php?cong=<?=$item['cartID']?>&soluong=<?=$item['quantity']?>"><label class="aloa">+</label></a>
             	</td>
-                <td class="total"><?=$a?></td>
+                <td class="total"><?=$a?>$</td>
                  <td class="thaotac">
                	<button>Xoá</button>
                </td>
@@ -112,7 +119,7 @@ if(!empty($_POST)) {
                	<td >tổng tiền :</td>
                	<td ></td>
                	<td ></td>
-               	<td style="color: red;" ><?=$b?></td>
+               	<td style="color: red;" ><?=$b?>$</td>
                	<td></td>
                </tr>
         </table>
