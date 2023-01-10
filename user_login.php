@@ -18,7 +18,7 @@ if (isset($_POST['login'])) {
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
           $_SESSION['username'] = $username;
-          header('location: index.php');
+          header('location: trangchu.php');
         }else {
             array_push($errors, "Wrong username/password combination");
         }

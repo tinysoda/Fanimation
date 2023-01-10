@@ -305,7 +305,8 @@ margin-left: 80px;
 
 li a i{
 	color: red;
-	margin-left: 600px;
+	margin-left: 730px;
+   position: absolute;
 	font-size: 35px;
 }
 

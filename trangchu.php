@@ -1,4 +1,8 @@
-
+<?php
+	    if(!empty($_SESSION['username'])){
+            header('location: index.php');
+    }
+?>
 <!DOCTYPE html>
 <html>
 
@@ -36,13 +40,14 @@
 		</div>
 		<div class="menu">
 			<ul class="menu1">
-				
-				<li><a href="user_login.php">Login</a>
+				<li><a href="product.php">Product</a>
 					
 				</li>
-				<li><a href="user_register.php">Resister</a>
+
+				<li  ><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
 					
 				</li>
+			
 			</ul>
 		</div>
 	</section>

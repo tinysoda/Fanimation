@@ -30,7 +30,7 @@ $all_product = mysqli_query($db,$sql);
 <body>
 	<section class="header">
 		<div class="anh">
-			<a href="index.php"><img src="images/2.jpg"> </a>
+			<a href="trangchu.php"><img src="images/2.jpg"> </a>
 		</div>
 		<div class="search">
 			<form>
@@ -46,18 +46,9 @@ $all_product = mysqli_query($db,$sql);
 			</div> 
 			
 		</div>
-		<<div class="menu">
+		<div class="menu">
 			<ul class="menu1">
-				<li><a href="product.php">Product</a>
-					
-				</li>
 				
-				<li><a href="user_login.php">Login</a>
-					
-				</li>
-				<li><a href="user_register.php">Resister</a>
-					
-				</li>
 
 				<li  ><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
 					

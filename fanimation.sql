@@ -54,6 +54,7 @@ CREATE TABLE `cart` (
 
 -- --------------------------------------------------------
 CREATE TABLE `cartad` (
+  `cartID` bigint(20) NOT NULL,
   `productID` bigint(20) NOT NULL,
   `quantity` tinyint(5) NOT NULL DEFAULT 0,
   `user_name` varchar(50) DEFAULT NULL,
@@ -66,7 +67,7 @@ CREATE TABLE `cartad` (
 -- Cấu trúc bảng cho bảng `order`
 --
 
-CREATE TABLE `order` (
+CREATE TABLE `ordere` (
   `orderID` bigint(20) NOT NULL,
   `address` varchar(100) DEFAULT NULL,
   `fullname` varchar(100) NOT NULL ,
@@ -176,10 +177,14 @@ ALTER TABLE `cart`
   ADD PRIMARY KEY (`cartID`),
   ADD KEY `fk_productID_cart` (`productID`);
 
+-- Chỉ mục cho bảng `cartad`
+--
+ALTER TABLE `cartad`
+  ADD PRIMARY KEY (`cartID`);
 --
 -- Chỉ mục cho bảng `order`
 --
-ALTER TABLE `order`
+ALTER TABLE `ordere`
   ADD PRIMARY KEY (`orderID`);
 
 --
@@ -226,11 +231,14 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `cart`
   MODIFY `cartID` bigint(20) NOT NULL AUTO_INCREMENT;
-
+-- AUTO_INCREMENT cho bảng `cartad`
+--
+ALTER TABLE `cartad`
+  MODIFY `cartID` bigint(20) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT cho bảng `order`
 --
-ALTER TABLE `order`
+ALTER TABLE `ordere`
   MODIFY `orderID` bigint(20) NOT NULL AUTO_INCREMENT;
 
 --

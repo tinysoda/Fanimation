@@ -1,8 +1,11 @@
 <?php
 require_once('del.php');
-$sql = "SELECT cartad.user_name,cartad.product_name,cartad.price,cartad.quantity,orderr.address,orderr.fullname,orderr.phonenumber,orderr.city from cartad,orderr WHERE cartad.orderid=orderr.orderid ";
-$list = queryResult($sql);
+if(!empty($_POST)) {
+	$id=$_POST['id'];
 
+	$sql = "delete from cartad where cartID= '$id'";
+	query($sql);
+}
 ?>
 
 <!DOCTYPE html>
@@ -11,33 +14,53 @@ $list = queryResult($sql);
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="donhang.css">
 </head>
 <body>
-	<table border="1" >
+
+	<table>
 <tr>
-	<td>tene khasch hafng</td>
-	<td>tên hàng</td>
-	<td>giá</td>
-	<td>số lượng</td>
-	<td>tổng</td>
-	<td>thông tin</td>
+	<td>user</td>
+	<td>Product</td>
+	<td>Price</td>
+	<td>Quantity</td>
+	<td>Total</td>
+	<td>Info</td>
+	<td>Thao tác</td>
 </tr>
 	<?php
+$sql ="select user_name from user";
+$listt = queryResult($sql);
+foreach ($listt as $item){
+	$a=$item['user_name'];
 
+	$sql = "SELECT cartad.cartID,cartad.product_name,cartad.price,cartad.quantity,ordere.address,ordere.fullname,ordere.phonenumber,ordere.city from cartad,ordere WHERE cartad.orderID=ordere.orderID and cartad.user_name='$a'";
+$list = queryResult($sql);
+if ($list != null){
+?>
+<tr>			
+               	<td class="name" ><?=$item['user_name']?></td>
+               	</tr>
+<?php
 	foreach ($list as $item) 
                             {
                             	$a=$item['price']*$item['quantity'];
                              ?>
-               <tr>
-               	<td><?=$item['user_name']?></td>
+                             	<form method="POST" >
+                             <tr>
+                             
+                <td><input type="" name="id" value="<?=$item['cartID']?>"></td>
                	<td><?=$item['product_name']?></td>
-               	<td><?=$item['price']?></td>
+               	<td><?=$item['price']?>$</td>
                	<td><?=$item['quantity']?></td>
-               	<td><?=$a?></td>
-               	<td><?=$item['fullname']?><br><?=$item['phonenumber']?> <br> <?=$item['address']?><br><?=$item['city']?></td>
+               	<td><?=$a?>$</td>
+               	<td>Name:<?=$item['fullname']?><br><br>PhoneNumber:<?=$item['phonenumber']?> <br><br>Address: <?=$item['address']?><br><br>City:<?=$item['city']?></td>
+               	<td><button>Xác Nhận</button></td>
                </tr>
-               <?php } ?>
+               </form>
+               <?php }}} ?>
 
 </table>
+
 </body>
 </html>

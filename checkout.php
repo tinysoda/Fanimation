@@ -10,14 +10,19 @@ if(!empty($_POST)) {
 	$city=$_POST['city'];
 	$phonenumber=$_POST['phonenumber'];
 
-$sql ="insert into `order`(address, fullname, phonenumber, city) values
+$sql ="insert into `ordere`(address, fullname, phonenumber, city) values
  ('$address','$fullname','$phonenumber','$city')";
  query($sql);
 
 $sql= "insert into cartad (productID,thumbnail,product_name,price,quantity,user_name)select productID,thumbnail,product_name,price,quantity,user_name from cart where user_name= '$us'";
 query($sql);
-$sql="update `cartad` set orderID = (select MAX(orderID) FROM `order`)";
+
+$sql="update `cartad` set orderID = (select MAX(orderID) FROM `ordere`) where user_name= '$us' ";
 query($sql);
+
+	$sql = "delete from cart where user_name= '$us'";
+	query($sql);
+
 }
 ?>
 
