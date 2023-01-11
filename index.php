@@ -1,3 +1,11 @@
+<?php
+include ('admin/db.php'); 
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: index.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -34,8 +42,10 @@
 			</form>
 			
 		</div>
-		<<div class="menu">
+		<div class="menu">
 			<ul class="menu1">
+			<?php	
+			if (!isset($_SESSION['username'])) : ?>
 				<li><a href="product.php">Product</a>
 					
 				</li>
@@ -43,10 +53,21 @@
 				<li><a href="user_login.php">Login</a>
 					
 				</li>
-				<li><a href="user_register.php">Resister</a>
+				<li><a href="user_register.php">Register</a>
 					
 				</li>
-
+			<?php elseif (isset($_SESSION['username'])):?>
+				<li><a href="product.php">Product</a>
+					
+				</li>
+				
+				<li><a href="#">Welcome, <strong><?php echo $_SESSION['username']; ?></strong>!</a>
+					
+				</li>
+				<li><a href="index.php?logout='1'">Logout</a>
+					
+				</li>
+			<?php endif ?>		
 				<li  ><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
 					
 				</li>
