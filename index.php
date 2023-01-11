@@ -68,7 +68,7 @@ if (isset($_GET['logout'])) {
 					
 				</li>
 			<?php endif ?>		
-				<li  ><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
+				<li><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
 					
 				</li>
 				<li></li>
@@ -297,7 +297,7 @@ if (isset($_GET['logout'])) {
 								<div class="card-body">
 									<div class="card-title">
 										Quạt trần villa
-									</div>tp
+									</div>
 									<div class="price-product">
 										<div class="price">
 											10.213.132 d
