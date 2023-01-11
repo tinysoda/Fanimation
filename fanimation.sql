@@ -46,23 +46,32 @@ CREATE TABLE `cart` (
   `cartID` bigint(20) NOT NULL,
   `productID` bigint(20) NOT NULL,
   `quantity` tinyint(5) NOT NULL DEFAULT 0,
-  `userID` bigint(20) NOT NULL,
-  `status` tinyint(10) NOT NULL DEFAULT 0,
-  `user_name` varchar(50) DEFAULT NULL
+  `user_name` varchar(50) DEFAULT NULL,
+  `thumbnail` varchar(1000) NOT NULL,
+  `product_name` varchar(50) NOT NULL,
+  `price` varchar(20) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
-
+CREATE TABLE `cartad` (
+  `productID` bigint(20) NOT NULL,
+  `quantity` tinyint(5) NOT NULL DEFAULT 0,
+  `user_name` varchar(50) DEFAULT NULL,
+  `thumbnail` varchar(1000) NOT NULL,
+  `product_name` varchar(50) NOT NULL,
+  `price` varchar(20) NOT NULL DEFAULT '0',
+  `orderid` bigint(20) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 --
 -- Cấu trúc bảng cho bảng `order`
 --
 
 CREATE TABLE `order` (
   `orderID` bigint(20) NOT NULL,
-  `userID` bigint(20) NOT NULL,
-  `status` tinyint(10) NOT NULL DEFAULT 0,
-  `total` float NOT NULL DEFAULT 0,
-  `address` varchar(100) DEFAULT NULL
+  `address` varchar(100) DEFAULT NULL,
+  `fullname` varchar(100) NOT NULL ,
+  `phonenumber` varchar(100) NOT NULL ,
+  `city` varchar(100) NOT NULL 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -165,15 +174,13 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`cartID`),
-  ADD KEY `idx_cart_user` (`userID`),
   ADD KEY `fk_productID_cart` (`productID`);
 
 --
 -- Chỉ mục cho bảng `order`
 --
 ALTER TABLE `order`
-  ADD PRIMARY KEY (`orderID`),
-  ADD KEY `idx_order_user` (`userID`);
+  ADD PRIMARY KEY (`orderID`);
 
 --
 -- Chỉ mục cho bảng `product`
@@ -252,15 +259,11 @@ ALTER TABLE `user`
 -- Các ràng buộc cho bảng `cart`
 --
 ALTER TABLE `cart`
-  ADD CONSTRAINT `fk_productID_cart` FOREIGN KEY (`productID`) REFERENCES `product` (`productID`),
-  ADD CONSTRAINT `fk_userID_cart` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`);
+  ADD CONSTRAINT `fk_productID_cart` FOREIGN KEY (`productID`) REFERENCES `product` (`productID`);
 
 --
 -- Các ràng buộc cho bảng `order`
 --
-ALTER TABLE `order`
-  ADD CONSTRAINT `fk_userID_order` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`);
-
 --
 -- Các ràng buộc cho bảng `product`
 --
