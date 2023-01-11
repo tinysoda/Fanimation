@@ -13,6 +13,7 @@ $all_product = mysqli_query($db,$sql);
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="assets/css/slider.css">
 	<link rel="stylesheet" href="assets/css/template.css">
+	<link rel="stylesheet" href="assets/css/product.css">
 	<script src="assets/js/slider.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<title></title>
@@ -63,10 +64,6 @@ $all_product = mysqli_query($db,$sql);
 				</li>
 				<li><a href="index.php?logout='1'">Logout</a>
 					
-				</li>
-				<li  ><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
-					
-				</li>
 			<?php endif ?>		
 				
 				<li></li>
