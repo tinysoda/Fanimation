@@ -1,9 +1,9 @@
 <?php
-include ('admin/db.php'); 
+include('admin/db.php');
 if (isset($_GET['logout'])) {
-    session_destroy();
-    unset($_SESSION['username']);
-    header("location: index.php");
+	session_destroy();
+	unset($_SESSION['username']);
+	header("location: index.php");
 }
 ?>
 <!DOCTYPE html>
@@ -19,15 +19,11 @@ if (isset($_GET['logout'])) {
 	<script src="assets/js/slider.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<title></title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 
 <body>
@@ -40,7 +36,7 @@ if (isset($_GET['logout'])) {
 				<input class="searchinput" type="text" name="aaaa">
 				<button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
 			</form>
-			
+
 		</div>
 		<div class="menu">
 			<ul class="menu1">
@@ -133,8 +129,7 @@ if (isset($_GET['logout'])) {
 				</div>
 			</div>
 		</div>
-		<div class="slider"
-			style="background-image: url('http://localhost/hoc/Fanimation/images/kute_header_ns.jpg'), linear-gradient(#eb01a5, #d13531);">
+		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/kute_header_ns.jpg'), linear-gradient(#eb01a5, #d13531);">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">K</div>
@@ -243,257 +238,7 @@ if (isset($_GET['logout'])) {
 		</div>
 
 		</div>
-		<section class="product-home">
-			<div class="block">
-				<div class="container-product">
-					<div class="box-title">
-						<div class="title">
-							<a href="">Typical Ceiling Fan</a>
-							<h2></h2>
-						</div>
 
-					</div>
-					<div class="list-procduct_item">
-
-
-						<div class="col-md-3">
-							<div class="product-item_info">
-								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
-									<div class="view-hover">
-										<i class="fa-regular fa-heart"></i>
-										<i class="fa-regular fa-eye"></i>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="card-title">
-										Quạt trần villa
-									</div>
-									<div class="price-product">
-										<div class="price">
-											10.213.132 d
-
-										</div>
-
-									</div>
-
-
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="col-md-3">
-							<div class="product-item_info">
-								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
-									<div class="view-hover">
-										<i class="fa-regular fa-heart"></i>
-										<i class="fa-regular fa-eye"></i>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="card-title">
-										Quạt trần villa
-									</div>
-									<div class="price-product">
-										<div class="price">
-											10.213.132 d
-
-										</div>
-
-									</div>
-
-
-								</div>
-
-							</div>
-
-						</div>
-						<div class="col-md-3">
-							<div class="product-item_info">
-								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
-									<div class="view-hover">
-										<i class="fa-regular fa-heart"></i>
-										<i class="fa-regular fa-eye"></i>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="card-title">
-										Quạt trần villa
-									</div>
-									<div class="price-product">
-										<div class="price">
-											10.213.132 d
-
-										</div>
-
-									</div>
-
-
-								</div>
-
-							</div>
-
-						</div>
-						<div class="col-md-3">
-							<div class="product-item_info">
-								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
-									<div class="view-hover">
-										<i class="fa-regular fa-heart"></i>
-										<i class="fa-regular fa-eye"></i>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="card-title">
-										Quạt trần villa
-									</div>
-									<div class="price-product">
-										<div class="price">
-											10.213.132 d
-
-										</div>
-
-									</div>
-
-
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-					<div class="box-title" style="margin-top: 30px;">
-						<div class="title">
-							<a href="">Best Seller </a>
-							<h2></h2>
-						</div>
-
-					</div>
-					<div class="list-procduct_item">
-
-
-						<div class="col-md-3">
-							<div class="product-item_info">
-								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
-									<div class="view-hover">
-										<i class="fa-regular fa-heart"></i>
-										<i class="fa-regular fa-eye"></i>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="card-title">
-										Quạt trần villa
-									</div>
-									<div class="price-product">
-										<div class="price">
-											10.213.132 d
-
-										</div>
-
-									</div>
-
-
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="col-md-3">
-							<div class="product-item_info">
-								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
-									<div class="view-hover">
-										<i class="fa-regular fa-heart"></i>
-										<i class="fa-regular fa-eye"></i>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="card-title">
-										Quạt trần villa
-									</div>
-									<div class="price-product">
-										<div class="price">
-											10.213.132 d
-
-										</div>
-
-									</div>
-
-
-								</div>
-
-							</div>
-
-						</div>
-						<div class="col-md-3">
-							<div class="product-item_info">
-								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
-									<div class="view-hover">
-										<i class="fa-regular fa-heart"></i>
-										<i class="fa-regular fa-eye"></i>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="card-title">
-										Quạt trần villa
-									</div>
-									<div class="price-product">
-										<div class="price">
-											10.213.132 d
-
-										</div>
-
-									</div>
-
-
-								</div>
-
-							</div>
-
-						</div>
-						<div class="col-md-3">
-							<div class="product-item_info">
-								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
-									<div class="view-hover">
-										<i class="fa-regular fa-heart"></i>
-										<i class="fa-regular fa-eye"></i>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="card-title">
-										Quạt trần villa
-									</div>
-									<div class="price-product">
-										<div class="price">
-											10.213.132 d
-
-										</div>
-
-									</div>
-
-
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
-			</div>
-
-		</section>
 
 		<div class="inner-container">
 			<div class="column-inner">
@@ -548,58 +293,58 @@ if (isset($_GET['logout'])) {
 				<h2>Fanimation’s focus is producing creative and functional fans that provide ultimate personal comfort
 					using the latest technology for energy efficiency and seamless control.</h2>
 			</div>
-			
+
 			<div class="phai">
 				<h2>DOWNLOAD</h2>
 			</div>
 		</div>
 		<div class="giuatonhat">
-		<div class="giuato">
-			<div class="giuatotrai1">
-				<b>Fanimation</b>	<br>
-				10983 Bennett Parkway <br>
-				Zionsville, IN 46077 <br>
-				Phone: 888.567.2055 <br>
-				Fax: 866.482.5215
-			</div>
-			
-			<div class="giuatotrai">
-				<a href="">Home <br></a>
+			<div class="giuato">
+				<div class="giuatotrai1">
+					<b>Fanimation</b> <br>
+					10983 Bennett Parkway <br>
+					Zionsville, IN 46077 <br>
+					Phone: 888.567.2055 <br>
+					Fax: 866.482.5215
+				</div>
+
+				<div class="giuatotrai">
+					<a href="">Home <br></a>
 					<a href="">Blog<br></a>
-						<a href="">Antique Fan Museum<br></a>
-							<a href="">Contact </a>
+					<a href="">Antique Fan Museum<br></a>
+					<a href="">Contact </a>
+				</div>
+				<div class="giuatotrai">
+					<a href="">Products <br></a>
+
+				</div>
+				<div class="giuatotrai">
+					<a href="">Product Support</a> <br>
+
+				</div>
+				<div class="giuatotrai2">
+					Enter your email address below to receive periodic communication from Fanimation.
+				</div>
+				<div class="email">
+					<form>
+						<input type="text" name="aaac" placeholder="Email Address">
+						<button type="submit">SUBSCRIBE</button>
+					</form>
+				</div>
 			</div>
-			<div class="giuatotrai">
-				<a href="">Products <br></a>
-					
-			</div>
-			<div class="giuatotrai">
-				<a href="">Product Support</a> <br>
-				
-			</div>
-			<div class="giuatotrai2">
-				Enter your email address below to receive periodic communication from Fanimation.
-			</div>
-			<div class="email">
-				<form>
-					<input type="text" name="aaac" placeholder="Email Address">
-					<button type="submit">SUBSCRIBE</button>
-				</form>
-			</div>
-		</div>
-		<div class="icon">
+			<div class="icon">
 				<a href=""><i class="fa-brands fa-twitter"></i>
 					<a href=""><i class="fa-brands fa-facebook"></i>
 						<a href=""><i class="fa-brands fa-youtube"></i>
 			</div>
-			</div>
+		</div>
 		<div class="cuoi">
 			<div class="trai">
 				© 2022 Fanimation. All rights reserved.
 			</div>
 			<div class="phai">
 				<a id="aa" href="policy.html">PRIVACY POLICY</a>
-					<a href="term.html">TERMS & CONDITIONS</a>
+				<a href="term.html">TERMS & CONDITIONS</a>
 			</div>
 		</div>
 	</section>

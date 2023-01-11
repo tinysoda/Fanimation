@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.flex-align_center {
+    align-items: center;
+    display: flex;
+}
+
+.flex-justify-content_center {
+    justify-content: center;
+    display: flex;
+}
+
+.flex-direction-col_rev {
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+.flex-direction-row_rev {
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.flex-direction-col {
+    flex-direction: column;
+    display: flex;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+    display: flex;
+}
+
+.box-section,
+.banner-section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner {
+    background-size: cover;
+    height: 100%;
+    min-height: 550px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+    display: flex;
+}
+
+.banner-chars .chars h1 {
+    font-family: "Quicksand";
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.box-section_row .box-section_col-right {
+    width: 30%;
+}
+
+.box-section_row .box-section_col-left {
+    width: 70%;
+}
+
+.function-box .box-section_row .box-section_col-right {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+
+}
+
+.function-box .box-section_row .box-section_col-left {
+    width: 50%;
+}
+
+.box-section_row {
+    max-width: 1350px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    display: flex;
+    margin: 0 auto;
+}
+
+.function-box .box-section_row {
+    max-width: 1350px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    display: flex;
+    margin: 0 auto;
+    align-content: flex-start;
+}
+
+.box-section_row .box-section_col-right img {
+    width: 360px;
+    height: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.box-section_row .box-section_col-left {
+    width: 70%;
+}
+
+.box-section_row .box-section_col-left .col-detail h3 {
+    font-family: 'Raleway', Open Sans, Helvetica, cursive;
+    font-size: 34px;
+    font-weight: 500;
+    color: #444245;
+    line-height: 1.25 !important;
+    padding-bottom: 15px;
+    padding-top: 0;
+}
+
+.box-section_row .box-section_col-left .col-detail {
+    padding: 10px;
+}
+
+.box-section_row .box-section_col-left .col-detail p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.box-section_row .title-box h6 {
+    font-family: 'Raleway', Open Sans, Helvetica, cursive;
+    font-size: 34px;
+    font-weight: 500;
+    color: #444245;
+    line-height: 1.25 !important;
+    padding-bottom: 15px;
+    padding-top: 0;
+    text-align: center;
+}
+
+.box-section_row .title-box p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 20px;
+    color: #444245;
+    line-height: 1.25 !important;
+    padding-bottom: 70px;
+    padding-top: 0;
+    text-align: center;
+}
+
+
+.box-section_row .box-section_col-left .col-detail h4 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Raleway', Open Sans, Helvetica, cursive;
+    color: #444245;
+    line-height: 1.35 !important;
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.box-section_row .box-section_col-left .col-detail ul li {
+    list-style-type: disc;
+    font-family: "Open Sans";
+    list-style-position: inside;
+    padding: 5px 0 5px 0;
+    color: #444245;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.box-section_row .box-section_col-left .col-detail ul li::marker {
+    fill: #111;
+}
+
+.box-section_row .box-section_col-left .app-icon {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.box-section_row .box-section_col-left .app-icon img {
+    margin: 5px 20px 20px 0;
+    width: 203px;
+}
+
+.col-img-detail {
+    width: 33.33%;
+    margin: 0 auto;
+}
+
+.col-img-detail img {
+    object-fit: contain;
+    width: 200px;
+    height: 100%;
+    padding: 15px;
+}
+
