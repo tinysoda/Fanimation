@@ -15,7 +15,7 @@ $sql="update cart set quantity = 1";
 query($sql);
 
 if(isset($_SESSION['username'])){
-$sql="UPDATE `cart` SET user_name = '$us' WHERE cartID = ( select MAX(cartid)FROM cart)";
+$sql="UPDATE `cart` SET user_name = '$us' WHERE cartID = ( select MAX(cartid)";
 query($sql);
 }
 header('Location: cart.php');
