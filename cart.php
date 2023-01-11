@@ -15,7 +15,7 @@ $sql="update cart set quantity = 1";
 query($sql);
 
 if(isset($_SESSION['username'])){
-$sql="UPDATE `cart` SET user_name = '$us' WHERE cartID = ( select MAX(cartid))";
+$sql="UPDATE `cart` SET user_name = '$us' WHERE cartID = ( select MAX(cartid)FROM cart)";
 query($sql);
 }
 header('Location: cart.php');
@@ -130,7 +130,11 @@ if(!empty($_POST)) {
       
       <form method="POST">
       	<a class="aab"  href="product.php">Tiếp tục mua hàng</a>
-      <button class="aaa">Đặt Hàng</button>
+
+      <?php 
+      if($b!=0){
+      echo ' <button class="aaa">Đặt Hàng</button>';
+			}?> 
       <input type="hidden" name="fake">
       </form>
       </div>
