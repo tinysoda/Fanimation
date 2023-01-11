@@ -30,7 +30,7 @@ $all_product = mysqli_query($db,$sql);
 <body>
 	<section class="header">
 		<div class="anh">
-			<a href="trangchu.php"><img src="images/2.jpg"> </a>
+			<a href="index.php"><img src="images/2.jpg"> </a>
 		</div>
 		<div class="search">
 			<form>

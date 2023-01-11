@@ -33,7 +33,7 @@ if (isset($_GET['logout'])) {
 <body>
 	<section class="header">
 		<div class="anh">
-			<a href="trangchu.php"><img src="images/2.jpg"> </a>
+			<a href="index.php"><img src="images/2.jpg"> </a>
 		</div>
 		<div class="search">
 			<form>
@@ -84,7 +84,7 @@ if (isset($_GET['logout'])) {
 	"wrapAround" : false,
 	"draggable": true
    }'>
-		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/coop_sale_head2-copy.jpg');">
+		<div class="slider" style="background-image: url('images/coop_sale_head2-copy.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars wow animate__fadeInDown" data-wow-duration="2s">H</div>
@@ -112,7 +112,7 @@ if (isset($_GET['logout'])) {
 				</div>
 			</div>
 		</div>
-		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/2022_new.jpg');">
+		<div class="slider" style="background-image: url('images/2022_new.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">S</div>
@@ -135,7 +135,7 @@ if (isset($_GET['logout'])) {
 			</div>
 		</div>
 		<div class="slider"
-			style="background-image: url('http://localhost/hoc/Fanimation/images/kute_header_ns.jpg'), linear-gradient(#eb01a5, #d13531);">
+			style="background-image: url('images/kute_header_ns.jpg'), linear-gradient(#eb01a5, #d13531);">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">K</div>
@@ -154,7 +154,7 @@ if (isset($_GET['logout'])) {
 			</div>
 
 		</div>
-		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/home-slide-wrap-2.jpg');">
+		<div class="slider" style="background-image: url('images/home-slide-wrap-2.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">W</div>
@@ -172,7 +172,7 @@ if (isset($_GET['logout'])) {
 				</div>
 			</div>
 		</div>
-		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/home-slide-stellar-3.jpg');">
+		<div class="slider" style="background-image: url('images/home-slide-stellar-3.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">S</div>
@@ -234,7 +234,7 @@ if (isset($_GET['logout'])) {
 
 					</div>
 					<div class="" style="width: 50%;">
-						<img src="http://localhost/hoc/Fanimation/images/home-location-bkgr-5.jpg" class="img-home_location">
+						<img src="images/home-location-bkgr-5.jpg" class="img-home_location">
 					</div>
 				</div>
 
@@ -260,7 +260,7 @@ if (isset($_GET['logout'])) {
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -288,7 +288,34 @@ if (isset($_GET['logout'])) {
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<div class="view-hover">
+										<i class="fa-regular fa-heart"></i>
+										<i class="fa-regular fa-eye"></i>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="card-title">
+										Quạt trần villa
+									</div>tp
+									<div class="price-product">
+										<div class="price">
+											10.213.132 d
+
+										</div>
+
+									</div>
+
+
+								</div>
+
+							</div>
+
+						</div>
+						<div class="col-md-3">
+							<div class="product-item_info">
+								<div class="card-images">
+									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -315,34 +342,7 @@ if (isset($_GET['logout'])) {
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
-									<div class="view-hover">
-										<i class="fa-regular fa-heart"></i>
-										<i class="fa-regular fa-eye"></i>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="card-title">
-										Quạt trần villa
-									</div>
-									<div class="price-product">
-										<div class="price">
-											10.213.132 d
-
-										</div>
-
-									</div>
-
-
-								</div>
-
-							</div>
-
-						</div>
-						<div class="col-md-3">
-							<div class="product-item_info">
-								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -380,7 +380,7 @@ if (isset($_GET['logout'])) {
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -408,7 +408,7 @@ if (isset($_GET['logout'])) {
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -435,7 +435,7 @@ if (isset($_GET['logout'])) {
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -462,7 +462,7 @@ if (isset($_GET['logout'])) {
 						<div class="col-md-3">
 							<div class="product-item_info">
 								<div class="card-images">
-									<img src="http://localhost/hoc/Fanimation/images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
+									<img src="images/quat-tran-5-canh-go-co-den-mrvu-villa-300x300.jpg" alt="">
 									<div class="view-hover">
 										<i class="fa-regular fa-heart"></i>
 										<i class="fa-regular fa-eye"></i>
@@ -499,10 +499,10 @@ if (isset($_GET['logout'])) {
 		<div class="inner-container">
 			<div class="column-inner">
 				<div class="column-inner-img-col-1 wow animate__fadeInLeft" data-wow-duration="2s">
-					<img src="http://localhost/hoc/Fanimation/images/showroomcollection2018_hover.jpg">
+					<img src="images/showroomcollection2018_hover.jpg">
 				</div>
 				<div class="column-inner-img-col-2 wow animate__fadeInRight" data-wow-duration="2s">
-					<img src="http://localhost/hoc/Fanimation/images/banner-fanimation-studio1_hover.jpg" alt="">
+					<img src="images/banner-fanimation-studio1_hover.jpg" alt="">
 
 				</div>
 
@@ -513,7 +513,7 @@ if (isset($_GET['logout'])) {
 		</div>
 		<div class="section-about_us relative">
 			<div class="template-inner ">
-				<div class="template-img_2" style="background-image: url('/images/air-apparent-banner-bkgr-2.jpg');">
+				<div class="template-img_2" style="background-image: url('images/air-apparent-banner-bkgr-2.jpg');">
 					<div class="inner-content ">
 						<div class="inner-content_about_us">
 							<div class="inner-content_air">

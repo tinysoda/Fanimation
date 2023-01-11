@@ -50,7 +50,7 @@ query($sql);
 	     <label> City</label>
 	     <input type="text"  name="city" >
 	      <label> Phone number</label>
-	     <input type="number"  name="phonenumber" >
+	     <input type="text"  name="phonenumber" >
 	</div>
 </div>
 <button> Continue to checkout</button>
