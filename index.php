@@ -70,7 +70,7 @@ if (isset($_GET['logout'])) {
 				<li  ><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
 					
 				</li>
-				
+			<?php endif ?>	
 				
 				<li></li>
 			</ul>
