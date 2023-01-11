@@ -42,7 +42,7 @@ if (isset($_GET['logout'])) {
 			<ul class="menu1">
 			<?php	
 			if (!isset($_SESSION['username'])) : ?>
-				
+				<li><a href="product.php">Product</a>
 				
 				<li><a href="user_login.php">Login</a>
 					
@@ -50,6 +50,9 @@ if (isset($_GET['logout'])) {
 				<li><a href="user_register.php">Register</a>
 					
 				</li>
+				<li><a href="fansync.php">Explore</a>
+
+            	</li>
 			<?php elseif (isset($_SESSION['username'])):?>
 				<li><a href="product.php">Product</a>
 					
@@ -61,6 +64,9 @@ if (isset($_GET['logout'])) {
 				<li><a href="index.php?logout='1'">Logout</a>
 					
 				</li>
+				<li><a href="fansync.php">Explore</a>
+
+            	</li>
 				<li  ><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
 					
 				</li>
@@ -79,7 +85,7 @@ if (isset($_GET['logout'])) {
 	"wrapAround" : false,
 	"draggable": true
    }'>
-		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/coop_sale_head2-copy.jpg');">
+		<div class="slider" style="background-image: url('images/coop_sale_head2-copy.jpg'); opacity: 0.9;">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars wow animate__fadeInDown" data-wow-duration="2s">H</div>
@@ -107,7 +113,7 @@ if (isset($_GET['logout'])) {
 				</div>
 			</div>
 		</div>
-		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/2022_new.jpg');">
+		<div class="slider" style="background-image: url('images/2022_new.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">S</div>
@@ -129,7 +135,7 @@ if (isset($_GET['logout'])) {
 				</div>
 			</div>
 		</div>
-		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/kute_header_ns.jpg'), linear-gradient(#eb01a5, #d13531);">
+		<div class="slider" style="background-image: url('images/kute_header_ns.jpg'), linear-gradient(#eb01a5, #d13531);">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">K</div>
@@ -148,7 +154,7 @@ if (isset($_GET['logout'])) {
 			</div>
 
 		</div>
-		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/home-slide-wrap-2.jpg');">
+		<div class="slider" style="background-image: url('images/home-slide-wrap-2.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">W</div>
@@ -166,7 +172,7 @@ if (isset($_GET['logout'])) {
 				</div>
 			</div>
 		</div>
-		<div class="slider" style="background-image: url('http://localhost/hoc/Fanimation/images/home-slide-stellar-3.jpg');">
+		<div class="slider" style="background-image: url('images/home-slide-stellar-3.jpg');">
 			<div class="slider-chars">
 				<div class="sl-chars">
 					<div class="chars">S</div>
@@ -228,7 +234,7 @@ if (isset($_GET['logout'])) {
 
 					</div>
 					<div class="" style="width: 50%;">
-						<img src="http://localhost/hoc/Fanimation/images/home-location-bkgr-5.jpg" class="img-home_location">
+						<img src="images/home-location-bkgr-5.jpg" class="img-home_location">
 					</div>
 				</div>
 
@@ -243,10 +249,10 @@ if (isset($_GET['logout'])) {
 		<div class="inner-container">
 			<div class="column-inner">
 				<div class="column-inner-img-col-1 wow animate__fadeInLeft" data-wow-duration="2s">
-					<img src="http://localhost/hoc/Fanimation/images/showroomcollection2018_hover.jpg">
+					<img src="images/showroomcollection2018_hover.jpg">
 				</div>
 				<div class="column-inner-img-col-2 wow animate__fadeInRight" data-wow-duration="2s">
-					<img src="http://localhost/hoc/Fanimation/images/banner-fanimation-studio1_hover.jpg" alt="">
+					<img src="images/banner-fanimation-studio1_hover.jpg" alt="">
 
 				</div>
 
@@ -257,7 +263,7 @@ if (isset($_GET['logout'])) {
 		</div>
 		<div class="section-about_us relative">
 			<div class="template-inner ">
-				<div class="template-img_2" style="background-image: url('/images/air-apparent-banner-bkgr-2.jpg');">
+				<div class="template-img_2" style="background-image: url('images/air-apparent-banner-bkgr-2.jpg');">
 					<div class="inner-content ">
 						<div class="inner-content_about_us">
 							<div class="inner-content_air">
