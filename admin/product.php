@@ -63,8 +63,8 @@
                     <?php        
                         }
                     ?>
-              
-    </table>
+            </tbody>  
+        </table>
     </div>
 </body>
 </html>

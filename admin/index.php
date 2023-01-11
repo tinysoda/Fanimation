@@ -29,8 +29,8 @@ if (isset($_GET['logout'])) {
         <p>Pick your task</p>
         <a href="product.php"class="btn">Product</a>
         <a href="user.php"class="btn">User</a>
+        <a href="donhang.php"class="btn">order List</a>
         <a href="index.php?logout='1'" class="btn">Log out</a>
-        <a href="donhang.php"class="btn">Laout</a>
     </div>
 </div>
             
