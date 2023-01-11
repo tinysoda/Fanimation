@@ -32,7 +32,7 @@ if (isset($_GET['logout'])) {
 </head>
 <section class="header">
     <div class="anh">
-        <a href="trangchu.php"><img src="images/2.jpg"> </a>
+        <a href="index.php"><img src="images/2.jpg"> </a>
     </div>
     <div class="search">
         <form>

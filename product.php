@@ -54,6 +54,9 @@ $all_product = mysqli_query($db,$sql);
 				<li><a href="user_register.php">Register</a>
 					
 				</li>
+				<li><a href="fansync.php">Explore</a>
+
+            </li>
 			<?php elseif (isset($_SESSION['username'])):?>
 				<li><a href="product.php">Product</a>
 					
@@ -63,6 +66,12 @@ $all_product = mysqli_query($db,$sql);
 					
 				</li>
 				<li><a href="index.php?logout='1'">Logout</a>
+				<li><a href="fansync.php">Explore</a>
+				<li  ><a href="cart.php"><i class="fa fa-shopping-cart" ></i></a>
+					
+				</li>
+
+            </li>
 					
 			<?php endif ?>		
 				
