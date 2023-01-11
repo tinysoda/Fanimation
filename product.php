@@ -111,7 +111,7 @@ $all_product = mysqli_query($db,$sql);
                             </div>
                             <h2><?php echo $row["product_name"]; ?></h2>
                         </div>
-                        <a href="cart.php?id=<?php echo $row["productID"]?>"> <button> Thêm vào giỏ</button> </a>
+                        <a href="cart.php?id=<?php echo $row["productID"]?>"> <button>Add To Cart</button> </a>
                     </div>
                     <?php
                 }
