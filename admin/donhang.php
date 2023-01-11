@@ -1,7 +1,7 @@
 <?php
 require_once('../del.php');
-if(!empty($_POST)) {
-	$id=$_POST['id'];
+if(!empty($_GET)) {
+	$id=$_GET['id'];
 
 	$sql = "delete from cartad where cartID= '$id'";
 	query($sql);
@@ -66,13 +66,13 @@ if(!empty($_POST)) {
 									<form method="POST" >
 								<tr>
 								
-					<td><?=$item['cartID']?></td>
+					<td></td>
 					<td><?=$item['product_name']?></td>
 					<td><?=$item['price']?>$</td>
 					<td><?=$item['quantity']?></td>
 					<td><?=$a?>$</td>
 					<td>Name:<?=$item['fullname']?><br><br>PhoneNumber:<?=$item['phonenumber']?> <br><br>Address: <?=$item['address']?><br><br>City:<?=$item['city']?></td>
-					<td><a href="delete_product.php?id=<?php echo $row['cartID']?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a></td>
+					<td><a href="donhang.php?id=<?=$item['cartID']?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a></td>
 				</tr>
 				</form>
 				<?php }}} ?>

@@ -23,6 +23,9 @@ query($sql);
 	$sql = "delete from cart where user_name= '$us'";
 	query($sql);
 
+		echo '<script>alert(" thank! ")</script>';
+	 echo("<script>window.location = 'index.php';</script>");
+
 }
 ?>
 
@@ -42,15 +45,15 @@ query($sql);
 	<div class="Billing">
 	<h3>Billing Address</h3>
 		 <label>Full Name</label>
-	     <input type="text"  name="fullname" >
+	     <input type="text" required  name="fullname" >
 	     <label>Email</label>
-	     <input type="email" name="email" >
+	     <input type="email" required name="email" >
 	     <label> Address</label>
-	     <input type="text"  name="address" >
+	     <input type="text" required name="address" >
 	     <label> City</label>
-	     <input type="text"  name="city" >
+	     <input type="text" required name="city" >
 	      <label> Phone number</label>
-	     <input type="text"  name="phonenumber" >
+	     <input type="number" required  name="phonenumber" >
 	</div>
 </div>
 <button> Continue to checkout</button>
