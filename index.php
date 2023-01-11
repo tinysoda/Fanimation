@@ -514,7 +514,7 @@ if (isset($_GET['logout'])) {
 		</div>
 		<div class="section-about_us relative">
 			<div class="template-inner ">
-				<div class="template-img_2" style="background-image: url('/images/air-apparent-banner-bkgr-2.jpg');">
+				<div class="template-img_2" style="background-image: url('images/air-apparent-banner-bkgr-2.jpg');">
 					<div class="inner-content ">
 						<div class="inner-content_about_us">
 							<div class="inner-content_air">
