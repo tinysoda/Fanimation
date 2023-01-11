@@ -92,3 +92,7 @@ table{
 	height: 120px;
 }
 
+a{
+	color: white;
+	text-decoration: none;
+}

@@ -42,13 +42,13 @@
                     while($row = mysqli_fetch_assoc($results)){
                         ?>
                          <tr>
-                            <td><?php echo $row['ID'] ?></td>
-                            <td><?php echo $row['username'] ?></td>
+                            <td><?php echo $row['userID'] ?></td>
+                            <td><?php echo $row['user_name'] ?></td>
                             <td><?php echo $row['email'] ?></td>
-                            <td><?php echo $row['tel'] ?></td>
+                            <td><?php echo $row['tel_num'] ?></td>
                             <td>
-                                <a href="edit_user.php?id=<?php echo $row['ID']?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
-                                <a href="delete_user.php?id=<?php echo $row['ID']?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a>
+                                <a href="edit_user.php?id=<?php echo $row['userID']?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
+                                <a href="delete_user.php?id=<?php echo $row['userID']?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a>
                             </td>
                         </tr>
                     <?php        

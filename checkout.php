@@ -1,3 +1,32 @@
+<?php
+require_once('del.php');
+session_start();
+$us=$_SESSION['username'];
+
+
+if(!empty($_POST)) {
+	$fullname=$_POST['fullname'];
+	$address=$_POST['address'];
+	$city=$_POST['city'];
+	$phonenumber=$_POST['phonenumber'];
+
+$sql ="insert into `ordere`(address, fullname, phonenumber, city) values
+ ('$address','$fullname','$phonenumber','$city')";
+ query($sql);
+
+$sql= "insert into cartad (productID,thumbnail,product_name,price,quantity,user_name)select productID,thumbnail,product_name,price,quantity,user_name from cart where user_name= '$us'";
+query($sql);
+
+$sql="update `cartad` set orderID = (select MAX(orderID) FROM `ordere`) where user_name= '$us' ";
+query($sql);
+
+	$sql = "delete from cart where user_name= '$us'";
+	query($sql);
+
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +42,7 @@
 	<div class="Billing">
 	<h3>Billing Address</h3>
 		 <label>Full Name</label>
-	     <input type="text"  name="firstname" >
+	     <input type="text"  name="fullname" >
 	     <label>Email</label>
 	     <input type="email" name="email" >
 	     <label> Address</label>
@@ -21,10 +50,10 @@
 	     <label> City</label>
 	     <input type="text"  name="city" >
 	      <label> Phone number</label>
-	     <input type="number"  name="city" >
+	     <input type="number"  name="phonenumber" >
 	</div>
 </div>
-<button>Continue to checkout</button>
+<button> Continue to checkout</button>
 </form>
 
 </body>
